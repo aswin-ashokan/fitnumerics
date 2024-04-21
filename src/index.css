@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.active{
+    color: #845EC2;
+    font-weight: 600;
+    font-size: 22px;
+}
