@@ -1,12 +1,33 @@
+import { Routes, Route } from "react-router-dom";
+import { Suspense, lazy } from "react";
+import Layout from "./Layout";
+import Bmr from "./components/FitCalcComponents/Bmr";
+import Calory from "./components/FitCalcComponents/Calory";
+const Home = lazy(() => import("./pages/Home"));
+const FitCalc = lazy(() => import("./pages/FitCalc"));
+const FitDrill = lazy(() => import("./pages/FitDrill"));
+const FitInfos = lazy(() => import("./pages/FitInfos"));
+const Bmi = lazy(() => import("./components/FitCalcComponents/Bmi"));
 
 function App() {
   return (
-    <>
-    <div>
-        <h1>App started</h1>
+    <div className="bg-[#FAF9F6]">
+      <Suspense fallback={<div>Loading</div>}>
+        <Routes>
+          <Route path="/" element={<Layout />}>
+            <Route index element={<Home />} />
+            <Route path="fitcalc" element={<FitCalc />}>
+            <Route path="bmi" element={<Bmi/>}/>
+            <Route path="bmr" element={<Bmr/>}/>
+            <Route path="calorie" element={<Calory/>}/>
+            </Route>
+            <Route path="fitdrill" element={<FitDrill />} />
+            <Route path="fitinfos" element={<FitInfos />} />
+          </Route>
+        </Routes>
+      </Suspense>
     </div>
-    </>
-  )
+  );
 }
 
-export default App
+export default App;
