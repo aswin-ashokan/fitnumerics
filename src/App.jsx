@@ -10,6 +10,8 @@ const Bmr = lazy(() => import("./components/FitCalcComponents/Bmr"));
 const Ibw = lazy(() => import("./components/FitCalcComponents/Ibw"));
 const Calory = lazy(() => import("./components/FitCalcComponents/Calory"));
 const Tdee = lazy(()=>import('./components/FitCalcComponents/Tdee'))
+const BodyFat = lazy(()=>import('./components/FitCalcComponents/BodyFat'))
+
 
 
 function App() {
@@ -24,6 +26,7 @@ function App() {
             <Route path="bmr" element={<Bmr/>}/>
             <Route path="ibw" element={<Ibw/>}/>
             <Route path="tdee" element={<Tdee/>}/>
+            <Route path="bodyfat" element={<BodyFat/>}/>
             <Route path="calorie" element={<Calory/>}/>
             </Route>
             <Route path="fitdrill" element={<FitDrill />} />
