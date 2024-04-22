@@ -1,13 +1,16 @@
 import { Routes, Route } from "react-router-dom";
 import { Suspense, lazy } from "react";
 import Layout from "./Layout";
-import Bmr from "./components/FitCalcComponents/Bmr";
-import Calory from "./components/FitCalcComponents/Calory";
 const Home = lazy(() => import("./pages/Home"));
 const FitCalc = lazy(() => import("./pages/FitCalc"));
 const FitDrill = lazy(() => import("./pages/FitDrill"));
 const FitInfos = lazy(() => import("./pages/FitInfos"));
 const Bmi = lazy(() => import("./components/FitCalcComponents/Bmi"));
+const Bmr = lazy(() => import("./components/FitCalcComponents/Bmr"));
+const Ibw = lazy(() => import("./components/FitCalcComponents/Ibw"));
+const Calory = lazy(() => import("./components/FitCalcComponents/Calory"));
+const Tdee = lazy(()=>import('./components/FitCalcComponents/Tdee'))
+
 
 function App() {
   return (
@@ -19,6 +22,8 @@ function App() {
             <Route path="fitcalc" element={<FitCalc />}>
             <Route path="bmi" element={<Bmi/>}/>
             <Route path="bmr" element={<Bmr/>}/>
+            <Route path="ibw" element={<Ibw/>}/>
+            <Route path="tdee" element={<Tdee/>}/>
             <Route path="calorie" element={<Calory/>}/>
             </Route>
             <Route path="fitdrill" element={<FitDrill />} />
