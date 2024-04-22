@@ -4,7 +4,6 @@ const calculatorsList = [
   { name: "BMI", link: "bmi" },
   { name: "BMR", link: "bmr" },
   { name: "IBW", link: "ibw" },
-  { name: "Calorie", link: "calorie" },
   { name: "Body Fat", link: "bodyfat" },
   { name: "Macros", link: "macros" },
   { name: "TDEE", link: "tdee" },
