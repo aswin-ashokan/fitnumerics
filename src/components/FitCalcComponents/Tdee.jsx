@@ -20,7 +20,7 @@ const Tdee = () => {
       height: `${height}`,
     },
     headers: {
-      "X-RapidAPI-Key": "c4d29563camsh8543d5b54dc96b3p1c96eejsnc6fa25c6edd3",
+      "X-RapidAPI-Key": `${import.meta.env.VITE_RAPID_API_KEY}`,
       "X-RapidAPI-Host": "gym-fit.p.rapidapi.com",
     },
   };

@@ -25,7 +25,7 @@ const BodyFat = () => {
       hip: `${hip}`,
     },
     headers: {
-      "X-RapidAPI-Key": "c4d29563camsh8543d5b54dc96b3p1c96eejsnc6fa25c6edd3",
+      "X-RapidAPI-Key": `${import.meta.env.VITE_RAPID_API_KEY}`,
       "X-RapidAPI-Host": "fitness-calculator.p.rapidapi.com",
     },
   };
@@ -184,25 +184,38 @@ const BodyFat = () => {
             <h4 className="text-2xl mb-2">Result</h4>
             <p className="text-lg">
               Your Body Fat <span className="text-sm">(BMI method)</span> :
-              <span className="text-xl font-medium"> {bodyFatReadings[bfkey[4]]} %</span>
+              <span className="text-xl font-medium">
+                {" "}
+                {bodyFatReadings[bfkey[4]]} %
+              </span>
             </p>
             <p className="text-lg">
-              Your Body Fat <span className="text-sm">(U.S Navy method)</span> :{""}
-                {" "}
-                <span className="text-xl font-medium">
-                {bodyFatReadings[bfkey[0]]} %</span>  
+              Your Body Fat <span className="text-sm">(U.S Navy method)</span> :
+              {""}{" "}
+              <span className="text-xl font-medium">
+                {bodyFatReadings[bfkey[0]]} %
+              </span>
             </p>
             <p className="text-lg">
               Your Body Fat Category :
-              <span className="text-xl font-medium"> {bodyFatReadings[bfkey[1]]}</span>
+              <span className="text-xl font-medium">
+                {" "}
+                {bodyFatReadings[bfkey[1]]}
+              </span>
             </p>
             <p className="text-lg">
               Your Body Fat Mass :
-              <span className="text-xl font-medium"> {bodyFatReadings[bfkey[2]]} %</span>
+              <span className="text-xl font-medium">
+                {" "}
+                {bodyFatReadings[bfkey[2]]} %
+              </span>
             </p>
             <p className="text-lg">
               Your Lean Body Mass :
-              <span className="text-xl font-medium"> {bodyFatReadings[bfkey[3]]} %</span>
+              <span className="text-xl font-medium">
+                {" "}
+                {bodyFatReadings[bfkey[3]]} %
+              </span>
             </p>
           </div>
         </div>
