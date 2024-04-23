@@ -1,20 +1,16 @@
 import { useState } from "react";
 import axios from "axios";
 
-const Bmr = () => {
+const Ibw = () => {
   const [age, setAge] = useState();
   const [gender, setGender] = useState('');
   const [height, setHeight] = useState();
-  const [weight, setWeight] = useState();
-  const [bmr, setBmr] = useState(0)
+  const [ibw, setIbw] = useState(0)
 
   const bmrOptions = {
     method: 'GET',
-    url: 'https://gym-fit.p.rapidapi.com/calculator/bmr',
+    url: 'https://gym-fit.p.rapidapi.com/calculator/ibw',
     params: {
-      weight: `${weight}`,
-      gender: `${gender}`,
-      age: `${age}`,
       height: `${height}`
     },
     headers: {
@@ -23,25 +19,23 @@ const Bmr = () => {
     }
   };
 
-  const handlebmrCalc = async()=>{
+  const handleibwCalc = async()=>{
     try{
-      console.log(gender);
       const response = await axios.request(bmrOptions);
       console.log(response.data);
-      const bmrRes = response.data
-      setBmr(bmrRes)
+      const ibwRes = response.data
+      setIbw(ibwRes)
     }catch(err){
-      console.error("Error in BMR Calculation :",err.message)
+      console.error("Error in IBW Calculation :",err.message)
     }finally{
       setAge(0);
       setGender('');
       setHeight(0);
-      setWeight(0)
     }
   }
   return (
     <main className="mb-36">
-      <h1 className="text-center text-2xl mb-4">BMR :  Basal Metabolic Rate</h1>
+      <h1 className="text-center text-2xl mb-4">IBW :  Ideal Body Weight</h1>
       <img
         src="/images/bmi.jpg"
         alt=""
@@ -49,10 +43,10 @@ const Bmr = () => {
         className="md:float-right"
       />
       <p className="text-lg">
-      BMR represents the number of calories your body requires to sustain vital functions such as breathing, circulation, and cell production while at complete rest. Factors influencing BMR include age, gender, body composition, and genetics. Calculating your BMR serves as a baseline for determining daily caloric needs and designing personalized nutrition and fitness plans.
+      Ideal Body Weight (IBW) is an estimate of the weight considered optimal for an individual&apos;s height, age,  and gender. It serves as a guideline for maintaining a healthy weight range and is often used in clinical settings to assess health risks associated with underweight or overweight conditions. Calculating IBW involves considering various factors, including body composition, muscle mass, and overall health status.
       </p>
       <p className="text-lg">
-      Understanding your BMR can guide dietary choices and weight management strategies. Consuming fewer calories than your BMR may lead to weight loss, while exceeding this value can result in weight gain. However, it&apos;s essential to consider BMR in conjunction with activity level, as physical exercise significantly influences total energy expenditure.
+      While IBW provides a useful reference point, it&apos;s important to recognize that individual factors such as muscle mass, bone density, and body composition can influence the ideal weight range. Additionally, IBW calculations may vary depending on different formulas or guidelines used. Therefore, it&apos;s essential to interpret IBW in conjunction with other indicators of health, such as BMI, waist circumference, and overall lifestyle factors.
       </p>
       <div className="lg:flex gap-10 w-full">
       <div className="mt-6 flex flex-col gap-4 lg:w-1/2 w-full p-4">
@@ -91,19 +85,9 @@ const Bmr = () => {
             onChange={(e)=>setHeight(e.target.value)}
           />
         </div>
-        <div>
-          <label htmlFor="">Weight</label>
-          <input
-            type="number"
-            placeholder="Weight in Kgs"
-            className="border-[0.2px] border-[#ec008c] ml-2 px-2 py-1 rounded-xl outline-none w-3/4"
-            value={weight}
-            onChange={(e)=>setWeight(e.target.value)}
-          />
-        </div>
         <div className="">
           <button className="bg-gradient-to-r from-[#DA4453] to-[#89216B] text-[#fff] px-4 py-2 rounded-2xl hover:bg-gradient-to-r hover:from-[#ec008c] hover:to-[#fc6767] transition duration-500 ease-in-out shadow-lg shadow-slate-500"
-          onClick={handlebmrCalc}>
+          onClick={handleibwCalc}>
             Calculate
           </button>
         </div>
@@ -111,18 +95,7 @@ const Bmr = () => {
       <div>
         <div className="mt-6">
           <h4>Result</h4>
-          <p>Your BMR : <span className="text-2xl"> {bmr}<span className="text-sm"> Calories/day</span></span></p>
-        </div>
-        <div className="mt-6">
-          <p>Daily calorie needs based on activity level</p>
-          <ul className=" text-lg">
-            <li>Sedentary: little or no exercise - 1,974 kcal</li>
-            <li>Exercise 1-3 times/week - 2,207 kcal</li>
-            <li>Exercise 4-5 times/week -	2,351 kcal</li>
-            <li>Daily exercise or intense exercise 3-4 times/week	- 2,488 kcal</li>
-            <li>Intense exercise 6-7 times/week	- 2,769 kcal</li>
-            <li>Very intense exercise daily, or physical job - 3,050 kcal</li>
-          </ul>
+          <p>Your IBW : <span className="text-2xl"> {ibw}<span className="text-sm"> Kg</span></span></p>
         </div>
       </div>
       </div>
@@ -130,4 +103,4 @@ const Bmr = () => {
   );
 };
 
-export default Bmr;
+export default Ibw;

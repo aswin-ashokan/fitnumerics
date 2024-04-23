@@ -3,11 +3,9 @@ import { Link, Outlet } from "react-router-dom";
 const calculatorsList = [
   { name: "BMI", link: "bmi" },
   { name: "BMR", link: "bmr" },
-  { name: "Calorie", link: "calorie" },
+  { name: "IBW", link: "ibw" },
   { name: "Body Fat", link: "bodyfat" },
-  { name: "IBW", link: "ibw" },
   { name: "Macros", link: "macros" },
-  { name: "IBW", link: "ibw" },
   { name: "TDEE", link: "tdee" },
 ];
 const FitCalc = () => {
