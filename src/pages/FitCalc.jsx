@@ -32,8 +32,8 @@ const FitCalc = () => {
           direction needed to make informed decisions, optimize your efforts,
           and ultimately unlock your full fitness potential.
         </p>
-        <h3 className="text-2xl mt-10 font-medium">Calculate Your</h3>
-        <div className="lg:col-start-2 lg:col-end-12 text-black mt-4 flex lg:gap-10 gap-6 flex-wrap items-center">
+        <h3 className="text-2xl mt-10 font-medium text-center text-slate-400">Calculate Your</h3>
+        <div className="lg:col-start-2 lg:col-end-12 text-black mt-4 flex lg:gap-10 gap-6 flex-wrap items-center justify-center">
           {calculatorsList.map((calcBtn) => (
             <Link
               key={calcBtn.name}

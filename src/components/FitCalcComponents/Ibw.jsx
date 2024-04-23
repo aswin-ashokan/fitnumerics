@@ -31,6 +31,7 @@ const Ibw = () => {
       setAge(0);
       setGender('');
       setHeight(0);
+      console.log(gender);
     }
   }
   return (
@@ -49,7 +50,7 @@ const Ibw = () => {
       While IBW provides a useful reference point, it&apos;s important to recognize that individual factors such as muscle mass, bone density, and body composition can influence the ideal weight range. Additionally, IBW calculations may vary depending on different formulas or guidelines used. Therefore, it&apos;s essential to interpret IBW in conjunction with other indicators of health, such as BMI, waist circumference, and overall lifestyle factors.
       </p>
       <div className="lg:flex gap-10 w-full">
-      <div className="mt-6 flex flex-col gap-4 lg:w-1/2 w-full p-4">
+      <div className="mt-6 flex flex-col gap-4 lg:w-1/2 w-full border-[0.1px] p-8 shadow-lg shadow-slate-300 rounded-xl">
         <div className="">
           <label htmlFor="age">Age</label>
           <input
@@ -63,13 +64,13 @@ const Ibw = () => {
         <div className="flex gap-4">
           <label htmlFor="gender">Gender :</label>
           <div>
-            <input type="radio" id="male" value="male" name="gender" onChange={(e)=>{setGender(e.target.value)}} checked={gender===''?false:true}/>
+            <input type="radio" id="male" value="male" name="gender" onChange={(e)=>{setGender(e.target.value)}}/>
             <label htmlFor="male" className="ml-1">
               Male
             </label>
           </div>
           <div>
-            <input type="radio" id="female" value="female" name="gender" onChange={(e)=>{setGender(e.target.value)}} checked={gender===''?false:true}/>
+            <input type="radio" id="female" value="female" name="gender" onChange={(e)=>{setGender(e.target.value)}}/>
             <label htmlFor="female" className="ml-1">
               Female
             </label>
@@ -86,16 +87,22 @@ const Ibw = () => {
           />
         </div>
         <div className="">
-          <button className="bg-gradient-to-r from-[#DA4453] to-[#89216B] text-[#fff] px-4 py-2 rounded-2xl hover:bg-gradient-to-r hover:from-[#ec008c] hover:to-[#fc6767] transition duration-500 ease-in-out shadow-lg shadow-slate-500"
+          <button className="mt-4 bg-gradient-to-r from-[#DA4453] to-[#89216B] text-[#fff] px-4 py-2 rounded-2xl hover:bg-gradient-to-r hover:from-[#ec008c] hover:to-[#fc6767] transition duration-500 ease-in-out shadow-lg shadow-slate-500"
           onClick={handleibwCalc}>
             Calculate
           </button>
         </div>
       </div>
-      <div>
+      <div className="border-[0.1px] rounded-xl p-8 shadow-lg shadow-slate-300 mt-6 lg:w-1/2 lg:h-full h-[250px]">
         <div className="mt-6">
-          <h4>Result</h4>
-          <p>Your IBW : <span className="text-2xl"> {ibw}<span className="text-sm"> Kg</span></span></p>
+        <img
+              src="/public/images/weighing-scale.png"
+              alt=""
+              width={200}
+              className="float-left drop-shadow-2xl"
+            />
+          <h4 className="py-10 text-center text-2xl">Result</h4>
+          <p className="text-center">Your IBW : <span className="text-4xl"> {ibw}<span className="text-sm"> Kg</span></span></p>
         </div>
       </div>
       </div>
