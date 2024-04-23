@@ -4,8 +4,8 @@ import { VscChromeClose } from "react-icons/vsc";
 import { useState } from "react";
 const navLinks = [
   { name: "Home", link: "" },
-  { name: "FitCalc", link: "/fitcalc" },
-  { name: "FitDrill", link: "/fitdrill" },
+  { name: "FitCalc", link: "fitcalc" },
+  { name: "FitDrill", link: "fitdrill" },
   { name: "FitInfo", link: "fitinfos" },
 ];
 const Navbar = () => {

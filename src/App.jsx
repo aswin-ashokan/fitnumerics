@@ -14,7 +14,7 @@ const Macros = lazy(()=>import('./components/FitCalcComponents/Macros'))
 
 function App() {
   return (
-    <div className="bg-[#FAF9F6]">
+    <div className="">
       <Suspense fallback={<div>Loading</div>}>
         <Routes>
           <Route path="/" element={<Layout />}>
