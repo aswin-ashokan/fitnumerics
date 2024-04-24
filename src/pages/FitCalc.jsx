@@ -20,7 +20,9 @@ const FitCalc = () => {
           tools like BMI, BMR, and TDEE calculators, providing concise insights
           to fuel your journey towards optimal health and wellness.
         </p>
-        <img src="/images/measure.jpg" alt="" width={400} className="rounded-lg float-left mr-10 mt-6"/>
+        <div className="lg:block flex justify-center items-center">
+        <img src="/images/measure.jpg" alt="" width={400} className="rounded-lg lg:float-left mr-10 mt-6"/>
+        </div>
         <p className="mt-6 text-xl">
           In the realm of fitness, knowledge is power, and precision is
           paramount. Fitness calculations play a pivotal role in understanding

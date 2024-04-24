@@ -73,19 +73,19 @@ const Bmi = () => {
         muscle mass, bone density, or overall body composition.
       </p>
       <div className="lg:flex justify-center items-center gap-10 w-full">
-        <div className="mt-6 flex flex-col gap-4 lg:w-2/4 w-full border-[0.1px] p-8 shadow-lg shadow-slate-300">
-          <div className="lg:ml-7 flex items-center w-full">
-            <label htmlFor="age">Age : </label>
+        <div className="mt-6 flex flex-col gap-4 lg:w-2/4 items-center w-full border-[0.1px] p-8 shadow-lg shadow-slate-300 rounded-lg">
+          <div className="flex items-center w-full">
+            <label htmlFor="age" className="w-1/4">Age : </label>
             <input
               type="number"
               placeholder="age"
-              className="border-[0.2px] border-[#ec008c] ml-2 px-2 py-1 rounded-xl outline-none"
+              className="border-[0.2px] border-[#ec008c] px-2 py-1 rounded-xl outline-none w-3/4"
               value={age}
               onChange={(e) => setAge(e.target.value)}
             />
           </div>
           <div className="flex gap-4 w-full">
-            <label htmlFor="gender" className="">Gender :</label>
+            <label htmlFor="gender" className="w-1/4">Gender :</label>
             <div className="">
               <input
                 type="radio"
@@ -117,21 +117,21 @@ const Bmi = () => {
             </div>
           </div>
           <div className="flex items-center w-full">
-            <label htmlFor="">Height :</label>
+            <label htmlFor="" className="w-1/4">Height :</label>
             <input
               type="number"
               placeholder="height in cm"
-              className="border-[0.2px] border-[#ec008c] ml-2 px-2 py-1 rounded-xl outline-none"
+              className="border-[0.2px] border-[#ec008c] px-2 py-1 rounded-xl outline-none w-3/4"
               value={height}
               onChange={(e) => setHeight(e.target.value)}
             />
           </div>
           <div className="flex items-center w-full">
-            <label htmlFor="">Weight :</label>
+            <label htmlFor="" className="w-1/4">Weight :</label>
             <input
               type="number"
               placeholder="weight in cm"
-              className="border-[0.2px] border-[#ec008c] ml-2 px-2 py-1 rounded-xl outline-none"
+              className="border-[0.2px] border-[#ec008c] px-2 py-1 rounded-xl outline-none w-3/4"
               value={height}
               onChange={(e) => setWeight(e.target.value)}
             />
