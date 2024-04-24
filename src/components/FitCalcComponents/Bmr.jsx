@@ -143,12 +143,13 @@ const Bmr = () => {
             </button>
           </div>
         </div>
-        <div className="border-[0.1px] p-8 shadow-lg shadow-slate-300 mt-6 lg:w-1/2 lg:h-full h-[250px] rounded-lg">
+        <div className="border-[0.1px] p-8 shadow-lg shadow-slate-300 mt-10 lg:w-1/2 lg:h-full h-[280px] rounded-lg">
           <div className="mt-6">
             <img
               src="/gifs/Girl running on treadmill.gif"
               alt=""
               className="float-left"
+              width={200}
             />
             <h4 className="text-center text-2xl">Result</h4>
             <p className="mt-4 text-center">Your BMR :<span className="ml-1 lg:text-3xl text-xl font-medium lg:mt-0 mt-2">{bmr}<span className="text-sm font-normal"> Calories/day</span></span>

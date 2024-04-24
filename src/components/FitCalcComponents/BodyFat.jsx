@@ -191,6 +191,7 @@ const BodyFat = () => {
                 src="/gifs/Man lifting barbell.gif"
                 alt=""
                 className="lg:float-left mt-10"
+                width={220}
               />
             </div>
             <h4 className="text-2xl mb-2 text-center">Result</h4>

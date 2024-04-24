@@ -151,6 +151,7 @@ const Bmi = () => {
               src="/gifs/Girl doing yoga.gif"
               alt=""
               className="float-left"
+              width={200}
             />
             <h4 className="text-center text-2xl">Result</h4>
             <p className="mt-4 text-center">

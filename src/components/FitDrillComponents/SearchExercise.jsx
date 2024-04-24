@@ -56,6 +56,7 @@ const SearchExercise = () => {
           specific body parts and access direct YouTube demos for guidance,
           ensuring every workout is efficient and effective.
         </p>
+        <div className="lg:block flex justify-center">
         <img
           src="/illustration/workout.svg"
           alt="exercising illustration"
@@ -63,6 +64,7 @@ const SearchExercise = () => {
           height={300}
           className="sm:float-right"
         />
+        </div>
         <p className="mt-6 lg:text-xl text-md text-wrap text-justify">
           Exercise isn&apos;t just about physical appearance; it&apos;s about
           overall health and well-being. Incorporating regular workouts into
