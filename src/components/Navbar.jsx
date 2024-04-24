@@ -24,6 +24,7 @@ const Navbar = () => {
     <>
       <header className="py-2 lg:px-0 px-4 w-full grid lg:grid-cols-12 shadow-xl shadow-slate-200">
         <div className="logo lg:col-span-1 lg:col-start-2 lg:col-end-2">
+          <NavLink to="/">
           <img
             src="/site-logo.png"
             alt="site logo"
@@ -31,13 +32,14 @@ const Navbar = () => {
             className=""
             loading="eager"
           />
+          </NavLink>
         </div>
         <div className="toggleBtn lg:hidden absolute right-8 top-4">
           <button className="" onClick={handleToggleClick}>
             {navToggle ? (
-              <FiMenu className="border-2 p-1 rounded-lg text-4xl text-[#f00b51] hover:text-[#ff6cab] active:text-orange-600" />
+              <FiMenu className="border-2 p-1 rounded-lg text-4xl text-[#f00b51] hover:text-[#ff6cab]"/>
             ) : (
-              <VscChromeClose className="text-3xl text-[#f00b51] hover:text-[#ff6cab] active:text-orange-600" />
+              <VscChromeClose className="text-3xl text-[#f00b51] hover:text-[#ff6cab]" />
             )}
           </button>
         </div>

@@ -1,6 +1,8 @@
 import { Routes, Route } from "react-router-dom";
-import { Suspense, lazy } from "react";
+import { Suspense, lazy, useEffect, useState } from "react";
 import Layout from "./Layout";
+import Preloader from "./components/FallBackComponents/Preloader";
+import SimpleLoader from "./components/FallBackComponents/SimpleLoader";
 const Home = lazy(() => import("./pages/Home"));
 const FitCalc = lazy(() => import("./pages/FitCalc"));
 const FitDrill = lazy(() => import("./pages/FitDrill"));
@@ -13,9 +15,17 @@ const BodyFat = lazy(()=>import('./components/FitCalcComponents/BodyFat'))
 const Macros = lazy(()=>import('./components/FitCalcComponents/Macros'))
 
 function App() {
+  const [loading, setLoading] = useState(false)
+  useEffect(()=>{
+    setLoading(true);
+    setTimeout(()=>{
+      setLoading(false);
+    },4000)
+  },[])
   return (
     <div className="">
-      <Suspense fallback={<div>Loading</div>}>
+      {loading ? (<Preloader/>):(
+      <Suspense fallback={<SimpleLoader/>}>
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
@@ -32,6 +42,7 @@ function App() {
           </Route>
         </Routes>
       </Suspense>
+      )}
     </div>
   );
 }

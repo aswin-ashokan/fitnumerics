@@ -42,13 +42,15 @@ const Bmr = () => {
   return (
     <main className="mb-36">
       <h1 className="text-center text-2xl mb-4">BMR : Basal Metabolic Rate</h1>
+      <div className="lg:block flex justify-center">
       <img
-        src="/public/images/bmr.jpg"
+        src="/images/bmr.jpg"
         alt=""
         width={250}
-        className="md:float-right"
+        className="md:float-right rounded-lg"
       />
-      <p className="text-lg">
+      </div>
+      <p className="text-lg lg:mt-0 mt-4">
         BMR represents the number of calories your body requires to sustain
         vital functions such as breathing, circulation, and cell production
         while at complete rest. Factors influencing BMR include age, gender,
@@ -68,18 +70,18 @@ const Bmr = () => {
         metabolic rate.
       </p>
       <div className="lg:flex gap-10 w-full">
-        <div className="mt-6 flex flex-col gap-4 lg:w-1/2 w-full border-[0.1px] p-8 shadow-lg shadow-slate-300">
-          <div className="">
+        <div className="mt-6 flex flex-col justify-center items-center gap-4 lg:w-1/2 w-full border-[0.1px] p-8 shadow-lg shadow-slate-300">
+          <div className="ml-7">
             <label htmlFor="age">Age : </label>
             <input
               type="number"
               placeholder="age"
-              className="border-[0.2px] border-[#ec008c] ml-2 px-2 py-1 rounded-xl outline-none w-3/4"
+              className="border-[0.2px] border-[#ec008c] ml-2 px-2 py-1 rounded-xl outline-none"
               value={age}
               onChange={(e) => setAge(e.target.value)}
             />
           </div>
-          <div className="flex gap-4">
+          <div className="flex gap-4 -ml-14">
             <label htmlFor="gender">Gender :</label>
             <div>
               <input
@@ -115,7 +117,7 @@ const Bmr = () => {
             <input
               type="number"
               placeholder="Height in cm"
-              className="border-[0.2px] border-[#ec008c] ml-2 px-2 py-1 rounded-xl outline-none w-3/4"
+              className="border-[0.2px] border-[#ec008c] ml-2 px-2 py-1 rounded-xl outline-none "
               value={height}
               onChange={(e) => setHeight(e.target.value)}
             />
@@ -125,7 +127,7 @@ const Bmr = () => {
             <input
               type="number"
               placeholder="Weight in Kgs"
-              className="border-[0.2px] border-[#ec008c] ml-2 px-2 py-1 rounded-xl outline-none w-3/4"
+              className="border-[0.2px] border-[#ec008c] ml-2 px-2 py-1 rounded-xl outline-none"
               value={weight}
               onChange={(e) => setWeight(e.target.value)}
             />
@@ -142,7 +144,7 @@ const Bmr = () => {
         <div className="border-[0.1px] p-8 shadow-lg shadow-slate-300 mt-6 lg:w-1/2 lg:h-full h-[250px]">
           <div className="mt-6">
             <img
-              src="/public/gifs/Girl running on treadmill.gif"
+              src="/gifs/Girl running on treadmill.gif"
               alt=""
               className="float-left"
             />

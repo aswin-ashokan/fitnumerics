@@ -38,30 +38,29 @@ const Ibw = () => {
     <main className="mb-36">
       <h1 className="text-center text-2xl mb-4">IBW :  Ideal Body Weight</h1>
       <img
-        src="/images/bmi.jpg"
+        src="/images/ibw.jpg"
         alt=""
-        width={400}
+        width={300}
         className="md:float-right"
       />
       <p className="text-lg">
       Ideal Body Weight (IBW) is an estimate of the weight considered optimal for an individual&apos;s height, age,  and gender. It serves as a guideline for maintaining a healthy weight range and is often used in clinical settings to assess health risks associated with underweight or overweight conditions. Calculating IBW involves considering various factors, including body composition, muscle mass, and overall health status.
       </p>
-      <p className="text-lg">
-      While IBW provides a useful reference point, it&apos;s important to recognize that individual factors such as muscle mass, bone density, and body composition can influence the ideal weight range. Additionally, IBW calculations may vary depending on different formulas or guidelines used. Therefore, it&apos;s essential to interpret IBW in conjunction with other indicators of health, such as BMI, waist circumference, and overall lifestyle factors.
-      </p>
+      <p className="text-lg">Our IBW calculator utilizes established formulas and guidelines to estimate the ideal weight range for individuals based on their height and other relevant factors. By inputting key parameters such as gender, age, and height, users can obtain personalized recommendations for their ideal body weight. Understanding your IBW can help you set realistic weight loss or maintenance goals, promote a positive body image, and reduce the risk of weight-related health issues.</p>
+  
       <div className="lg:flex gap-10 w-full">
-      <div className="mt-6 flex flex-col gap-4 lg:w-1/2 w-full border-[0.1px] p-8 shadow-lg shadow-slate-300 rounded-xl">
-        <div className="">
-          <label htmlFor="age">Age</label>
+      <div className="mt-6 flex flex-col justify-center items-center gap-4 lg:w-1/2 w-full border-[0.1px] p-8 shadow-lg shadow-slate-300 rounded-xl">
+        <div className="ml-7">
+          <label htmlFor="age">Age : </label>
           <input
             type="number"
             placeholder="age"
-            className="border-[0.2px] border-[#ec008c] ml-2 px-2 py-1 rounded-xl outline-none w-3/4"
+            className="border-[0.2px] border-[#ec008c] ml-2 px-2 py-1 rounded-xl outline-none"
             value={age}
             onChange={(e)=>setAge(e.target.value)}
           />
         </div>
-        <div className="flex gap-4">
+        <div className="flex gap-4 -ml-14">
           <label htmlFor="gender">Gender :</label>
           <div>
             <input type="radio" id="male" value="male" name="gender" onChange={(e)=>{setGender(e.target.value)}}/>
@@ -77,11 +76,11 @@ const Ibw = () => {
           </div>
         </div>
         <div>
-          <label htmlFor="">Height</label>
+          <label htmlFor="">Height : </label>
           <input
             type="number"
             placeholder="Height in cm"
-            className="border-[0.2px] border-[#ec008c] ml-2 px-2 py-1 rounded-xl outline-none w-3/4"
+            className="border-[0.2px] border-[#ec008c] ml-2 px-2 py-1 rounded-xl outline-none"
             value={height}
             onChange={(e)=>setHeight(e.target.value)}
           />
@@ -96,7 +95,7 @@ const Ibw = () => {
       <div className="border-[0.1px] rounded-xl p-8 shadow-lg shadow-slate-300 mt-6 lg:w-1/2 lg:h-full h-[250px]">
         <div className="mt-6">
         <img
-              src="/public/images/weighing-scale.png"
+              src="/images/weighing-scale.png"
               alt=""
               width={200}
               className="float-left drop-shadow-2xl"
@@ -106,6 +105,9 @@ const Ibw = () => {
         </div>
       </div>
       </div>
+      <p className="text-lg mt-10">
+      While IBW provides a useful reference point, it&apos;s important to recognize that individual factors such as muscle mass, bone density, and body composition can influence the ideal weight range. Additionally, IBW calculations may vary depending on different formulas or guidelines used. Therefore, it&apos;s essential to interpret IBW in conjunction with other indicators of health, such as BMI, waist circumference, and overall lifestyle factors. Maintaining a weight within the ideal range for your height is associated with reduced risk of chronic diseases such as heart disease, diabetes, and certain cancers.
+      </p>
     </main>
   );
 };

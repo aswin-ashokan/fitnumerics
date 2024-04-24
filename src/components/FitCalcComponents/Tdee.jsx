@@ -53,55 +53,61 @@ const Tdee = () => {
   };
   var tdeeSplitRes = tdeeSplit();
   var mildWeightLoss = Math.round(tdee - tdeeSplitRes[0]);
-    var WeightLoss = Math.round(tdee - tdeeSplitRes[1]);
-    var extremeWeightLoss = Math.round(tdee - tdeeSplitRes[2]);
-    var mildWeightGain = Math.round(tdee + tdeeSplitRes[3]);
-    var WeightGain = Math.round(tdee + tdeeSplitRes[4]);
-    var extremeWeightGain = Math.round(tdee + tdeeSplitRes[5]);
+  var WeightLoss = Math.round(tdee - tdeeSplitRes[1]);
+  var extremeWeightLoss = Math.round(tdee - tdeeSplitRes[2]);
+  var mildWeightGain = Math.round(tdee + tdeeSplitRes[3]);
+  var WeightGain = Math.round(tdee + tdeeSplitRes[4]);
+  var extremeWeightGain = Math.round(tdee + tdeeSplitRes[5]);
 
   return (
     <main className="mb-36">
       <h1 className="text-center text-2xl mb-4">
         TDEE : Total Daily Energy Expenditure
       </h1>
-      <img
-        src="/images/bmi.jpg"
-        alt=""
-        width={400}
-        className="md:float-right"
-      />
-      <p className="text-lg">
-        Total Daily Energy Expenditure (TDEE) is the total number of calories
-        your body burns in a day, encompassing your Basal Metabolic Rate (BMR)
-        and additional energy expenditure from physical activity and exercise.
-        Understanding your TDEE is essential for achieving your fitness goals
-        and maintaining a healthy lifestyle.
+      <div className="lg:block flex justify-center">
+        <img
+          src="/images/tdee.jpg"
+          alt=""
+          width={380}
+          className="md:float-right ml-4 rounded-lg"
+        />
+      </div>
+      <p className="text-lg lg:mt-0 mt-4">
+        Welcome to our Total Daily Energy Expenditure (TDEE) Calculator, your
+        ultimate tool for understanding the total number of calories your body
+        burns in a day encompassing your Basal Metabolic Rate (BMR) and
+        additional energy expenditure from physical activity and exercise.
+        Measuring TDEE goes beyond calorie counting, providing valuable insights
+        into your energy needs, metabolism, and overall health.
       </p>
-      <p className="text-lg">
-        TDEE provides a comprehensive picture of your daily caloric needs,
-        considering both your resting metabolic rate and the calories burned
-        through daily activities and workouts. Calculating your TDEE allows you
-        to tailor your nutrition plan to support weight loss, muscle gain, or
-        weight maintenance effectively. Once you&apos;ve determined your TDEE,
-        you can adjust your calorie intake based on your goals. Consuming fewer
-        calories than your TDEE can lead to weight loss, while consuming more
-        can result in weight gain. Additionally, understanding your TDEE helps
-        you optimize macronutrient ratios and meal timing to fuel workouts and
-        support recovery.
+      <p className="text-lg mt-2">
+        Measuring Total Daily Energy Expenditure is essential for achieving
+        balanced nutrition and supporting your fitness goals. TDEE represents
+        the sum of calories your body burns throughout the day, encompassing
+        your Basal Metabolic Rate (BMR) and additional calories expended through
+        physical activity and exercise. Understanding your TDEE helps you tailor
+        your calorie intake to match your energy expenditure, ensuring you
+        maintain a healthy weight, support muscle growth, and fuel your workouts
+        effectively. Once you&apos;ve determined your TDEE, you can adjust your
+        calorie intake based on your goals. Consuming fewer calories than your
+        TDEE can lead to weight loss, while consuming more can result in weight
+        gain. Additionally, understanding your TDEE helps you optimize
+        macronutrient ratios and meal timing to fuel workouts and support
+        recovery.
       </p>
-      <div className="lg:flex gap-10 w-full">
-        <div className="mt-6 flex flex-col gap-4 lg:w-1/2 w-full p-4">
-          <div className="">
+      <div className="lg:flex gap-10 w-full mt-10">
+        <div className=" flex flex-col rounded-lg justify-center items-center gap-6 lg:w-1/2 w-full border-[0.1px] p-8 shadow-lg shadow-slate-300">
+          <div className="ml-5">
             <label htmlFor="age">Age :</label>
             <input
               type="number"
               placeholder="age"
-              className="border-[0.2px] border-[#ec008c] ml-2 px-2 py-1 rounded-xl outline-none w-3/4"
+              className="border-[0.2px] border-[#ec008c] ml-2 px-2 py-1 rounded-xl outline-none"
               value={age}
               onChange={(e) => setAge(e.target.value)}
             />
           </div>
-          <div className="flex gap-4">
+          <div className="flex gap-4 mr-14">
             <label htmlFor="gender">Gender :</label>
             <div>
               <input
@@ -137,7 +143,7 @@ const Tdee = () => {
             <input
               type="number"
               placeholder="Height in cm"
-              className="border-[0.2px] border-[#ec008c] ml-2 px-2 py-1 rounded-xl outline-none w-3/4"
+              className="border-[0.2px] border-[#ec008c] ml-2 px-2 py-1 rounded-xl outline-none"
               value={height}
               onChange={(e) => setHeight(e.target.value)}
             />
@@ -147,17 +153,17 @@ const Tdee = () => {
             <input
               type="number"
               placeholder="Weight in Kgs"
-              className="border-[0.2px] border-[#ec008c] ml-2 px-2 py-1 rounded-xl outline-none w-3/4"
+              className="border-[0.2px] border-[#ec008c] ml-2 px-2 py-1 rounded-xl outline-none"
               value={weight}
               onChange={(e) => setWeight(e.target.value)}
             />
           </div>
-          <div>
+          <div className="mr-[40px]">
             <label htmlFor="activityLevel">Activity Level : </label>
             <select
               name=""
               id="activityLevel"
-              className="border-[0.2px] border-[#ec008c] ml-2 px-2 py-1 rounded-xl outline-none"
+              className="border-[0.2px] border-[#ec008c] ml-2 px-2 py-1 rounded-xl outline-none w-[200px]"
               value={activityLevel}
               onChange={(e) => setActivityLevel(e.target.value)}
             >
@@ -169,53 +175,124 @@ const Tdee = () => {
           </div>
           <div className="">
             <button
-              className="bg-gradient-to-r from-[#DA4453] to-[#89216B] text-[#fff] px-4 py-2 rounded-2xl hover:bg-gradient-to-r hover:from-[#ec008c] hover:to-[#fc6767] transition duration-500 ease-in-out shadow-lg shadow-slate-500"
+              className="bg-gradient-to-r from-[#DA4453] to-[#89216B] text-[#fff] px-4 py-2 rounded-2xl hover:bg-gradient-to-r hover:from-[#ec008c] hover:to-[#fc6767] transition duration-500 ease-in-out shadow-lg shadow-slate-500 mt-6"
               onClick={handlebmiCalc}
             >
               Calculate
             </button>
           </div>
         </div>
-        <div>
+        <div className="border-[0.1px] p-8 rounded-lg shadow-lg shadow-slate-300 lg:w-1/2 lg:mt-0 mt-10">
           <div className="mt-6">
-            <h4>Result</h4>
-            <p>
-              Your TDEE :{" "}
-              <span className="text-2xl">
+            <h4 className="text-2xl text-center">Result</h4>
+            <p className="text-center text-lg">
+              Your Maintainance Calories:
+              <span className="text-2xl font-medium">
                 {" "}
-                {tdee}
-                <span className="text-sm"> Calories/day</span>
+                {tdee}{" "}
+                <span className="text-sm font-normal"> Calories/day</span>
               </span>
             </p>
-            <p className="">
-              Your Maintainance Calories:
-              <span className="text-xl"> {tdee}</span>
-            </p>
-            <ul className="mt-3">
-              <li>
-                <p className="text-lg">Energy intake to lose weight:</p>
-              </li>
-              <li>
-                Mild weight loss (0.25 kg/week) :<span className="font-medium">{mildWeightLoss}</span>
-              </li>
-              <li>
-                weight loss (0.5 kg/week) :<span className="font-medium">{WeightLoss}</span>
-              </li>
-              <li>
-                Extreme weight loss (1 kg/week) :<span className="font-medium">{extremeWeightLoss}</span>
-              </li>
-            </ul>
-            <ul className="mt-2">
-              <li>
-                <p className="text-lg ">Energy intake to gain weight:</p>
-              </li>
-              <li>Mild weight gain (0.25 kg/week) :<span className="font-medium"> {mildWeightGain}</span></li>
-              <li>weight gain (0.5 kg/week) :<span className="font-medium"> {WeightGain}</span></li>
-              <li>Extreme weight gain (1 kg/week) :<span className="font-medium"> {extremeWeightGain}</span></li>
-            </ul>
+            <div className="flex flex-col items-center gap-2">
+              <div className="">
+                <ul className="mt-3">
+                  <li>
+                    <p className="text-lg text-center text-slate-500">
+                      Energy intake to lose weight
+                    </p>
+                  </li>
+                  <li className="mb-1">
+                    <span className="text-lg font-medium">
+                      Mild weight loss
+                    </span>{" "}
+                    (0.25 kg/week) :
+                    <span className="text-xl font-medium">
+                      {" "}
+                      {mildWeightLoss}{" "}
+                      <span className="text-sm font-normal"> Calories/day</span>
+                    </span>
+                  </li>
+                  <li>
+                    <span className="text-lg font-medium">weight loss</span>{" "}
+                    (0.5 kg/week) :
+                    <span className="text-xl font-medium">
+                      {" "}
+                      {WeightLoss}{" "}
+                      <span className="text-sm font-normal"> Calories/day</span>
+                    </span>
+                  </li>
+                  <li className="mt-1">
+                    <span className="text-lg font-medium">
+                      Extreme weight loss
+                    </span>{" "}
+                    (1 kg/week) :
+                    <span className="text-xl font-medium">
+                      {" "}
+                      {extremeWeightLoss}{" "}
+                      <span className="text-sm font-normal"> Calories/day</span>
+                    </span>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <ul className="mt-2">
+                  <li>
+                    <p className="text-lg text-center text-slate-500">
+                      Energy intake to gain weight:
+                    </p>
+                  </li>
+                  <li className="mb-1">
+                    <span className="text-lg font-medium">
+                      Mild weight gain
+                    </span>{" "}
+                    (0.25 kg/week) :
+                    <span className="font-medium text-xl">
+                      {" "}
+                      {mildWeightGain}{" "}
+                      <span className="text-sm font-normal"> Calories/day</span>
+                    </span>
+                  </li>
+                  <li>
+                    <span className="text-lg font-medium">weight gain</span>{" "}
+                    (0.5 kg/week) :
+                    <span className="font-medium text-xl">
+                      {" "}
+                      {WeightGain}{" "}
+                      <span className="text-sm font-normal"> Calories/day</span>
+                    </span>
+                  </li>
+                  <li className="mt-1">
+                    <span className="text-lg font-medium">
+                      Extreme weight gain
+                    </span>{" "}
+                    (1 kg/week) :
+                    <span className="font-medium text-xl">
+                      {" "}
+                      {extremeWeightGain}{" "}
+                      <span className="text-sm font-normal"> Calories/day</span>
+                    </span>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+      <p className="mt-10 text-lg">
+        Our TDEE Calculator estimates your Total Daily Energy Expenditure based
+        on various factors such as age, gender, weight, height, activity level,
+        and fitness goals. By inputting this information, you can obtain
+        personalized recommendations for your daily calorie needs. Whether
+        you&apos;re aiming to lose weight, gain muscle, or maintain your current
+        physique, knowing your TDEE allows you to create a nutrition plan that
+        aligns with your goals and lifestyle. TDEE can vary significantly
+        between individuals based on factors such as age, gender, body
+        composition, and activity level. Regular exercise and strength training
+        can increase TDEE by boosting metabolism and building lean muscle mass.
+        Factors such as stress, sleep quality, and hormonal fluctuations can
+        also impact TDEE, highlighting the importance of overall lifestyle
+        factors in energy balance.
+      </p>
     </main>
   );
 };

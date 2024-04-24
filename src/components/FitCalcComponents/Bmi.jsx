@@ -49,12 +49,14 @@ const Bmi = () => {
   return (
     <main className="mb-36">
       <h1 className="text-center text-2xl mb-4">BMI : Body Mass Index</h1>
+      <div className="lg:block flex justify-center">
       <img
         src="/images/bmi.jpg"
         alt=""
         width={400}
         className="md:float-right"
       />
+      </div>
       <p className="text-lg">
         Body Mass Index (BMI) is a widely-used measurement tool that provides an
         indication of a person&apos;s body fatness based on their height and
@@ -71,20 +73,20 @@ const Bmi = () => {
         muscle mass, bone density, or overall body composition.
       </p>
       <div className="lg:flex justify-center items-center gap-10 w-full">
-        <div className="mt-6 flex flex-col gap-4 lg:w-1/2 w-full border-[0.1px] p-8 shadow-lg shadow-slate-300">
-          <div className="">
-            <label htmlFor="age">Age</label>
+        <div className="mt-6 flex flex-col justify-center items-center gap-4 lg:w-1/2 w-full border-[0.1px] p-8 shadow-lg shadow-slate-300">
+          <div className="ml-7">
+            <label htmlFor="age">Age : </label>
             <input
               type="number"
               placeholder="age"
-              className="border-[0.2px] border-[#ec008c] ml-2 px-2 py-1 rounded-xl outline-none w-3/4"
+              className="border-[0.2px] border-[#ec008c] ml-2 px-2 py-1 rounded-xl outline-none"
               value={age}
               onChange={(e) => setAge(e.target.value)}
             />
           </div>
-          <div className="flex gap-4">
-            <label htmlFor="gender">Gender :</label>
-            <div>
+          <div className="flex gap-4 -ml-14">
+            <label htmlFor="gender" className="">Gender :</label>
+            <div className="">
               <input
                 type="radio"
                 id="male"
@@ -93,6 +95,7 @@ const Bmi = () => {
                 onChange={(e) => {
                   setGender(e.target.value);
                 }}
+                className=""
               />
               <label htmlFor="male" className="ml-1">
                 Male
@@ -114,21 +117,21 @@ const Bmi = () => {
             </div>
           </div>
           <div>
-            <label htmlFor="">Height</label>
+            <label htmlFor="">Height : </label>
             <input
               type="number"
               placeholder="Height in cm"
-              className="border-[0.2px] border-[#ec008c] ml-2 px-2 py-1 rounded-xl outline-none w-3/4"
+              className="border-[0.2px] border-[#ec008c] ml-2 px-2 py-1 rounded-xl outline-none"
               value={height}
               onChange={(e) => setHeight(e.target.value)}
             />
           </div>
           <div>
-            <label htmlFor="">Weight</label>
+            <label htmlFor="">Weight : </label>
             <input
               type="number"
               placeholder="Weight in Kgs"
-              className="border-[0.2px] border-[#ec008c] ml-2 px-2 py-1 rounded-xl outline-none w-3/4"
+              className="border-[0.2px] border-[#ec008c] ml-2 px-2 py-1 rounded-xl outline-none"
               value={weight}
               onChange={(e) => setWeight(e.target.value)}
             />
@@ -145,7 +148,7 @@ const Bmi = () => {
         <div className="border-[0.1px] p-6 shadow-lg shadow-slate-300 mt-6 lg:w-1/2 lg:h-full h-[250px]">
           <div className="mt-6">
             <img
-              src="/public/gifs/Girl doing yoga.gif"
+              src="/gifs/Girl doing yoga.gif"
               alt=""
               className="float-left"
             />
@@ -197,7 +200,7 @@ const Bmi = () => {
           </p>
         </div>
         <div>
-          <img src="/public/images/bmiRange.jpg" alt="" width={600} />
+          <img src="/images/bmiRange.jpg" alt="" width={600} />
         </div>
       </div>
     </main>

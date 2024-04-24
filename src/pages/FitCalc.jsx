@@ -20,6 +20,7 @@ const FitCalc = () => {
           tools like BMI, BMR, and TDEE calculators, providing concise insights
           to fuel your journey towards optimal health and wellness.
         </p>
+        <img src="/public/images/measure.jpg" alt="" width={400} className="rounded-lg float-left mr-10 mt-6"/>
         <p className="mt-6 text-xl">
           In the realm of fitness, knowledge is power, and precision is
           paramount. Fitness calculations play a pivotal role in understanding
@@ -30,9 +31,9 @@ const FitCalc = () => {
           composition, metabolic rate, and calorie requirements. By harnessing
           the data derived from these calculations, you gain the clarity and
           direction needed to make informed decisions, optimize your efforts,
-          and ultimately unlock your full fitness potential.
+          and ultimately unlock your full fitness potential. At FitCalc, we&apos;re dedicated to empowering you with the tools and knowledge necessary to embark on a journey of sustainable health and wellness
         </p>
-        <h3 className="text-2xl mt-10 font-medium text-center text-slate-400">Calculate Your</h3>
+        <h3 className="text-2xl mt-16 font-medium text-center text-slate-400">Calculate Your</h3>
         <div className="lg:col-start-2 lg:col-end-12 text-black mt-4 flex lg:gap-10 gap-6 flex-wrap items-center justify-center">
           {calculatorsList.map((calcBtn) => (
             <Link
