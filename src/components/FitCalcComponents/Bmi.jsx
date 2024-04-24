@@ -74,7 +74,7 @@ const Bmi = () => {
       </p>
       <div className="lg:flex justify-center items-center gap-10 w-full">
         <div className="mt-6 flex flex-col md:items-center gap-4 lg:w-1/2 w-full border-[0.1px] p-8 shadow-lg shadow-slate-300">
-          <div className="ml-7">
+          <div className="ml-7 flex items-center">
             <label htmlFor="age">Age : </label>
             <input
               type="number"
@@ -116,7 +116,7 @@ const Bmi = () => {
               </label>
             </div>
           </div>
-          <div>
+          <div className="flex items-center">
             <label htmlFor="">Height : </label>
             <input
               type="number"
@@ -126,7 +126,7 @@ const Bmi = () => {
               onChange={(e) => setHeight(e.target.value)}
             />
           </div>
-          <div>
+          <div className="flex items-center">
             <label htmlFor="">Weight : </label>
             <input
               type="number"
