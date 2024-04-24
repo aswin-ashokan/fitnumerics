@@ -73,8 +73,8 @@ const Bmi = () => {
         muscle mass, bone density, or overall body composition.
       </p>
       <div className="lg:flex justify-center items-center gap-10 w-full">
-        <div className="mt-6 flex flex-col md:items-center gap-4 lg:w-1/2 w-full border-[0.1px] p-8 shadow-lg shadow-slate-300">
-          <div className="ml-7 flex items-center">
+        <div className="mt-6 flex flex-col gap-4 lg:w-2/4 w-full border-[0.1px] p-8 shadow-lg shadow-slate-300">
+          <div className="lg:ml-7 flex items-center w-full">
             <label htmlFor="age">Age : </label>
             <input
               type="number"
@@ -84,7 +84,7 @@ const Bmi = () => {
               onChange={(e) => setAge(e.target.value)}
             />
           </div>
-          <div className="flex gap-4 md:-ml-14">
+          <div className="flex gap-4 w-full">
             <label htmlFor="gender" className="">Gender :</label>
             <div className="">
               <input
@@ -116,29 +116,29 @@ const Bmi = () => {
               </label>
             </div>
           </div>
-          <div className="flex items-center">
-            <label htmlFor="">Height : </label>
+          <div className="flex items-center w-full">
+            <label htmlFor="">Height :</label>
             <input
               type="number"
-              placeholder="Height in cm"
+              placeholder="height in cm"
               className="border-[0.2px] border-[#ec008c] ml-2 px-2 py-1 rounded-xl outline-none"
               value={height}
               onChange={(e) => setHeight(e.target.value)}
             />
           </div>
-          <div className="flex items-center">
-            <label htmlFor="">Weight : </label>
+          <div className="flex items-center w-full">
+            <label htmlFor="">Weight :</label>
             <input
               type="number"
-              placeholder="Weight in Kgs"
+              placeholder="weight in cm"
               className="border-[0.2px] border-[#ec008c] ml-2 px-2 py-1 rounded-xl outline-none"
-              value={weight}
+              value={height}
               onChange={(e) => setWeight(e.target.value)}
             />
           </div>
           <div className="">
             <button
-              className="bg-gradient-to-r from-[#DA4453] to-[#89216B] text-[#fff] px-4 py-2 rounded-2xl hover:bg-gradient-to-r hover:from-[#ec008c] hover:to-[#fc6767] transition duration-500 ease-in-out shadow-lg shadow-slate-500 md:ml-0 ml-24"
+              className="bg-gradient-to-r from-[#DA4453] to-[#89216B] text-[#fff] px-4 py-2 rounded-2xl hover:bg-gradient-to-r hover:from-[#ec008c] hover:to-[#fc6767] transition duration-500 ease-in-out shadow-lg shadow-slate-500"
               onClick={handlebmiCalc}
             >
               Calculate
