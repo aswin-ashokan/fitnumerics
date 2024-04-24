@@ -71,20 +71,21 @@ const Bmr = () => {
       </p>
       <div className="lg:flex gap-10 w-full">
         <div className="mt-6 flex flex-col justify-center items-center gap-4 lg:w-1/2 w-full border-[0.1px] p-8 shadow-lg shadow-slate-300">
-          <div className="ml-7">
-            <label htmlFor="age">Age : </label>
+          <div className="lg:ml-12 w-full">
+            <label htmlFor="age" className="w-1/4">Age : </label>
             <input
               type="number"
               placeholder="age"
-              className="border-[0.2px] border-[#ec008c] ml-2 px-2 py-1 rounded-xl outline-none"
+              className="border-[0.2px] border-[#ec008c] ml-2 px-2 py-1 rounded-xl outline-none w-3/4"
               value={age}
               onChange={(e) => setAge(e.target.value)}
             />
           </div>
-          <div className="flex gap-4 -ml-14">
-            <label htmlFor="gender">Gender :</label>
+          <div className="flex gap-4 w-full">
+            <label htmlFor="gender" className="">Gender :</label>
             <div>
               <input
+              className=""
                 type="radio"
                 id="male"
                 value="male"
@@ -99,6 +100,7 @@ const Bmr = () => {
             </div>
             <div>
               <input
+              className=""
                 type="radio"
                 id="female"
                 value="female"
@@ -112,22 +114,22 @@ const Bmr = () => {
               </label>
             </div>
           </div>
-          <div>
-            <label htmlFor="">Height : </label>
+          <div className="w-full">
+            <label htmlFor="" className="w-1/4">Height : </label>
             <input
               type="number"
               placeholder="Height in cm"
-              className="border-[0.2px] border-[#ec008c] ml-2 px-2 py-1 rounded-xl outline-none "
+              className="border-[0.2px] border-[#ec008c] ml-2 px-2 py-1 rounded-xl outline-none w-3/4"
               value={height}
               onChange={(e) => setHeight(e.target.value)}
             />
           </div>
-          <div>
-            <label htmlFor="">Weight : </label>
+          <div className="w-full">
+            <label htmlFor="" className="w-1/4">Weight : </label>
             <input
               type="number"
               placeholder="Weight in Kgs"
-              className="border-[0.2px] border-[#ec008c] ml-2 px-2 py-1 rounded-xl outline-none"
+              className="border-[0.2px] border-[#ec008c] ml-2 px-2 py-1 rounded-xl outline-none w-3/4"
               value={weight}
               onChange={(e) => setWeight(e.target.value)}
             />

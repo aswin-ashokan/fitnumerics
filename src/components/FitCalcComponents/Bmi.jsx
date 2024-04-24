@@ -132,7 +132,7 @@ const Bmi = () => {
               type="number"
               placeholder="weight in cm"
               className="border-[0.2px] border-[#ec008c] px-2 py-1 rounded-xl outline-none w-3/4"
-              value={height}
+              value={weight}
               onChange={(e) => setWeight(e.target.value)}
             />
           </div>
