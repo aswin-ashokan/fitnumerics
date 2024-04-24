@@ -73,7 +73,7 @@ const Bmi = () => {
         muscle mass, bone density, or overall body composition.
       </p>
       <div className="lg:flex justify-center items-center gap-10 w-full">
-        <div className="mt-6 flex flex-col justify-center items-center gap-4 lg:w-1/2 w-full border-[0.1px] p-8 shadow-lg shadow-slate-300">
+        <div className="mt-6 flex flex-col md:items-center gap-4 lg:w-1/2 w-full border-[0.1px] p-8 shadow-lg shadow-slate-300">
           <div className="ml-7">
             <label htmlFor="age">Age : </label>
             <input
@@ -84,7 +84,7 @@ const Bmi = () => {
               onChange={(e) => setAge(e.target.value)}
             />
           </div>
-          <div className="flex gap-4 -ml-14">
+          <div className="flex gap-4 md:-ml-14">
             <label htmlFor="gender" className="">Gender :</label>
             <div className="">
               <input
@@ -138,7 +138,7 @@ const Bmi = () => {
           </div>
           <div className="">
             <button
-              className="bg-gradient-to-r from-[#DA4453] to-[#89216B] text-[#fff] px-4 py-2 rounded-2xl hover:bg-gradient-to-r hover:from-[#ec008c] hover:to-[#fc6767] transition duration-500 ease-in-out shadow-lg shadow-slate-500"
+              className="bg-gradient-to-r from-[#DA4453] to-[#89216B] text-[#fff] px-4 py-2 rounded-2xl hover:bg-gradient-to-r hover:from-[#ec008c] hover:to-[#fc6767] transition duration-500 ease-in-out shadow-lg shadow-slate-500 md:ml-0 ml-24"
               onClick={handlebmiCalc}
             >
               Calculate
