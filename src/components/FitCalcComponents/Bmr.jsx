@@ -151,12 +151,7 @@ const Bmr = () => {
               className="float-left"
             />
             <h4 className="text-center text-2xl">Result</h4>
-            <p className="mt-4 text-center">
-              Your BMR :
-              <span className="text-3xl lg:mt-0 mt-2">
-                {bmr}
-                <span className="text-sm"> Calories/day</span>
-              </span>
+            <p className="mt-4 text-center">Your BMR :<span className="ml-1 lg:text-3xl text-xl font-medium lg:mt-0 mt-2">{bmr}<span className="text-sm font-normal"> Calories/day</span></span>
             </p>
           </div>
         </div>

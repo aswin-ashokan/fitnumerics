@@ -194,8 +194,8 @@ const Tdee = () => {
           <div className="mt-6">
             <h4 className="text-2xl text-center">Result</h4>
             <p className="mt-4 text-center lg:text-lg">
-              Your Maintainance Calories:
-              <span className="lg:text-2xl text-xl font-medium">
+              Your Maintainance Calories :
+              <span className="ml-1 lg:text-2xl text-xl font-medium">
                 {tdee}
                 <span className="text-sm font-normal"> kcals</span>
               </span>
@@ -210,17 +210,15 @@ const Tdee = () => {
                   </li>
                   <li className="mb-1 mt-1">
                     <span className="lg:text-lg font-medium">
-                      Mild weight loss
+                      Mild weight loss :
                     </span>
-                    (0.25 kg/week) :
                     <span className="ml-1 lg:text-xl text-lg font-medium">
                       {mildWeightLoss}
                       <span className="text-sm font-normal"> kcals</span>
                     </span>
                   </li>
                   <li>
-                    <span className="lg:text-lg font-medium">weight loss</span>
-                    (0.5 kg/week) :
+                    <span className="lg:text-lg font-medium">weight loss :</span>
                     <span className="ml-1 lg:text-xl text-lg font-medium">
                       {WeightLoss}
                       <span className="text-sm font-normal"> kcals</span>
@@ -228,9 +226,8 @@ const Tdee = () => {
                   </li>
                   <li className="mt-1">
                     <span className="lg:text-lg font-medium">
-                      Extreme weight loss
+                      Extreme weight loss :
                     </span>
-                    (1 kg/week) :
                     <span className="ml-1 lg:text-xl text-lg font-medium">
                       {extremeWeightLoss}
                       <span className="text-sm font-normal"> kcals</span>
@@ -247,17 +244,15 @@ const Tdee = () => {
                   </li>
                   <li className="mb-1">
                     <span className="lg:text-lg font-medium">
-                      Mild weight gain
+                      Mild weight gain :
                     </span>
-                    (0.25 kg/week) :
                     <span className="ml-1 font-medium lg:text-xl text-lg">
                       {mildWeightGain}
                       <span className="text-sm font-normal"> kcals</span>
                     </span>
                   </li>
                   <li>
-                    <span className="lg:text-lg font-medium">weight gain</span>
-                    (0.5 kg/week) :
+                    <span className="lg:text-lg font-medium">weight gain :</span>
                     <span className="font-medium lg:text-xl text-lg ml-1">
                       {WeightGain}
                       <span className="text-sm font-normal"> kcals</span>
@@ -265,9 +260,8 @@ const Tdee = () => {
                   </li>
                   <li className="mt-1">
                     <span className="lg:text-lg font-medium">
-                      Extreme weight gain
+                      Extreme weight gain :
                     </span>
-                    (1 kg/week) :
                     <span className="font-medium lg:text-xl text-lg ml-1">
                       {extremeWeightGain}
                       <span className="text-sm font-normal"> kcals</span>
