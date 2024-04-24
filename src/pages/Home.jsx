@@ -3,7 +3,7 @@ const Home = () => {
     <main className="lg:grid grid-cols-12 lg:px-0 px-4 h-[calc(100vh-47px)]">
       <div className="col-span-12 col-start-2 col-end-12 flex lg:flex-row flex-col lg:gap-10 gap-4 mt-10">
         <div className="lg:w-1/2 flex gap-2 justify-center rounded-2xl p-5 drop-shadow-2xl">
-          <div className="mt-10">
+          <div className="">
             <img
               src="/images/home.jpg"
               alt=""
@@ -13,7 +13,7 @@ const Home = () => {
               loading="eager"
             />
           </div>
-          <div className="mt-10">
+          <div className="">
             <img
               src="/images/homemeasure.jpg"
               alt=""
@@ -33,7 +33,7 @@ const Home = () => {
           </div>
           <div></div>
         </div>
-        <div className="lg:w-1/2 lg:mt-10">
+        <div className="lg:w-1/2">
           <p className="lg:mt-10 text-lg">
             <span className="text-3xl">
               Welcome to{" "}
@@ -47,7 +47,7 @@ const Home = () => {
             journey, we&apos;ve got everything you need to achieve your fitness
             goals and live a healthier, happier life.
           </p>
-          <p className="mt-4 text-lg">
+          <p className="mt-2 text-lg">
             At FitNumerics, we believe that fitness is not one-size-fits-all.
             That&apos;s why we offer a wide range of personalized solutions to
             meet your unique needs and preferences. From fitness calculators and
