@@ -164,7 +164,7 @@ const Bmr = () => {
       </div>
       <div className="mt-10 lg:flex">
         <div className="lg:w-1/2 lg:text-left text-center">
-          <p className="text-xl font-medium text-slate-400">Daily calorie needs based on activity level</p>
+          <p className="font-medium text-slate-400">Daily calorie needs based on activity level</p>
           <ul className="text-lg mt-2">
             <li>Sedentary: little or no exercise - 1,974 kcal</li>
             <li>Exercise 1-3 times/week - 2,207 kcal</li>
@@ -177,7 +177,7 @@ const Bmr = () => {
           </ul>
         </div>
         <div className="lg:w-3/4">
-          <p className="mt-2 md:text-xl lg:text-left text-justify">
+          <p className="mt-4 md:text-xl lg:text-left text-justify">
             It&apos;s important to note that while BMR provides valuable
             insights into baseline calorie needs, it&apos;s just one piece of
             the puzzle. Considering your activity level is crucial, as physical

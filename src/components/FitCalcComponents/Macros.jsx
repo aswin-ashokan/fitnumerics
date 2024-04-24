@@ -59,20 +59,22 @@ const Macros = () => {
   return (
     <main className="mb-36">
       <h1 className="text-center text-2xl mb-4">Macro Nutrients Amount</h1>
+      <div className="lg:block flex justify-center">
       <img
         src="/images/macros.jpg"
         alt=""
         width={500}
         className="md:float-right"
       />
-      <p className="text-lg">
+      </div>
+      <p className="lg:mt-2 mt-4 md:text-xl lg:text-left text-justify">
         Welcome to our Macro Nutrients Calculator, your gateway to achieving
         optimal nutrition and enhancing your overall well-being. Measuring macro
         nutrients - carbohydrates, proteins, and fats - is essential for
         understanding the composition of your diet and ensuring you meet your
         body&apos;s nutritional needs for optimal health and performance.
       </p>
-      <p className="text-lg mt-1">
+      <p className="lg:mt-2 mt-4 md:text-xl lg:text-left text-justify">
         Measuring macro nutrients provides a holistic view of your dietary
         intake and serves as a cornerstone for achieving balanced nutrition.
         Each macro nutrient plays a unique role in supporting bodily functions
@@ -87,17 +89,17 @@ const Macros = () => {
       </p>
       <div className="lg:flex gap-10 w-full items-center">
         <div className="mt-10 flex flex-col gap-4 rounded-lg lg:w-1/2 w-full border-[0.1px] p-8 shadow-lg shadow-slate-300">
-          <div className="mt-4 ml-6">
-            <label htmlFor="age">Age :</label>
+          <div className="w-full">
+            <label htmlFor="age" className="w-1/4">Age :</label>
             <input
               type="number"
               placeholder="age"
-              className="border-[0.2px] border-[#ec008c] ml-2 px-2 py-1 rounded-xl outline-none"
+              className="border-[0.2px] border-[#ec008c] ml-2 px-2 py-1 rounded-xl outline-none w-3/4"
               value={age}
               onChange={(e) => setAge(e.target.value)}
             />
           </div>
-          <div className="flex gap-4">
+          <div className="flex gap-4 w-full">
             <label htmlFor="gender">Gender :</label>
             <div>
               <input
@@ -128,32 +130,32 @@ const Macros = () => {
               </label>
             </div>
           </div>
-          <div>
-            <label htmlFor="">Height :</label>
+          <div className="w-full">
+            <label htmlFor="" className="w-1/4">Height :</label>
             <input
               type="number"
               placeholder="Height in cm"
-              className="border-[0.2px] border-[#ec008c] ml-2 px-2 py-1 rounded-xl outline-none"
+              className="border-[0.2px] border-[#ec008c] ml-2 px-2 py-1 rounded-xl outline-none w-3/4" 
               value={height}
               onChange={(e) => setHeight(e.target.value)}
             />
           </div>
-          <div>
-            <label htmlFor="">Weight :</label>
+          <div className="w-full">
+            <label htmlFor="" className="w-1/4">Weight :</label>
             <input
               type="number"
               placeholder="Weight in Kgs"
-              className="border-[0.2px] border-[#ec008c] ml-2 px-2 py-1 rounded-xl outline-none"
+              className="border-[0.2px] border-[#ec008c] ml-2 px-2 py-1 rounded-xl outline-none w-3/4"
               value={weight}
               onChange={(e) => setWeight(e.target.value)}
             />
           </div>
-          <div>
-            <label htmlFor="activityLevel">Activity : </label>
+          <div className="w-full">
+            <label htmlFor="activityLevel" className="w-1/4">Activity : </label>
             <select
               name=""
               id="activityLevel"
-              className="border-[0.2px] border-[#ec008c] ml-2 px-2 py-1 rounded-xl outline-none w-2/4"
+              className="border-[0.2px] border-[#ec008c] ml-2 px-2 py-1 rounded-xl outline-none w-3/4"
               value={activityLevel}
               onChange={(e) => setActivityLevel(e.target.value)}
             >
@@ -169,12 +171,12 @@ const Macros = () => {
               </option>
             </select>
           </div>
-          <div className="ml-4">
-            <label htmlFor="activityLevel">Goal : </label>
+          <div className="ml-4 w-full">
+            <label htmlFor="activityLevel" className="w-1/4">Goal : </label>
             <select
               name=""
               id="activityLevel"
-              className="border-[0.2px] border-[#ec008c] ml-2 px-2 py-1 rounded-xl outline-none"
+              className="border-[0.2px] border-[#ec008c] ml-2 px-2 py-1 rounded-xl outline-none w-3/4"
               value={goal}
               onChange={(e) => setGoal(e.target.value)}
             >
@@ -195,7 +197,7 @@ const Macros = () => {
             </button>
           </div>
         </div>
-        <div className="border-[0.1px] p-8 rounded-lg shadow-lg shadow-slate-300 mt-10 lg:w-3/4 lg:h-full h-[550px]">
+        <div className="border-[0.1px] p-8 rounded-lg shadow-lg shadow-slate-300 mt-10 lg:w-3/4">
           <div className="mt-2">
             <h4 className="text-2xl mb-2 text-center">Result</h4>
             <p className="mt-4 text-center text-lg">
@@ -315,7 +317,7 @@ const Macros = () => {
           </div>
         </div>
       </div>
-      <p className="mt-10 text-lg">
+      <p className="mt-10 md:text-xl lg:text-left text-justify">
       Our Macro Nutrients Calculator enables you to calculate the ideal distribution of carbohydrates, proteins, and fats based on your individual needs and goals. By inputting key parameters such as age, gender, weight, height, activity level, and you goal preferences, you can obtain personalized recommendations for your macro nutrient intake. Whether you&apos;re following a specific diet plan, fueling intense workouts, or managing medical conditions, understanding your macro nutrient needs is crucial for optimizing your nutritional intake and achieving your desired outcomes. Consuming a balanced ratio of macro nutrients can help stabilize blood sugar levels, regulate appetite, and support long-term weight management goals.
       </p>
     </main>

@@ -64,14 +64,14 @@ const BodyFat = () => {
           className="md:float-right"
         />
       </div>
-      <p className="text-lg">
+      <p className="lg:mt-2 mt-4 md:text-xl lg:text-left text-justify">
         Welcome to our Body Fat Percentage calculator, your tool for unlocking a
         deeper understanding of your body composition and overall health.
         Measuring body fat percentage goes beyond the numbers on a scale,
         offering valuable insights into your fitness level, risk of chronic
         diseases, and progress towards achieving your wellness goals.
       </p>
-      <p className="text-lg mt-2">
+      <p className="lg:mt-2 mt-4 md:text-xl lg:text-left text-justify">
         Measuring body fat percentage is crucial for several reasons. Unlike
         weight alone, which fails to distinguish between fat mass and lean body
         mass, body fat percentage provides a more comprehensive assessment of
@@ -84,18 +84,18 @@ const BodyFat = () => {
       </p>
       <div className="lg:flex gap-10 w-full justify-center items-center">
         <div className="mt-6 flex flex-col justify-center items-center gap-4 rounded-lg lg:w-1/2 w-full border-[0.1px] p-8 shadow-lg shadow-slate-300">
-          <div className="ml-7">
-            <label htmlFor="age">Age :</label>
+          <div className="ml-7 w-full">
+            <label htmlFor="age" className="w-1/4">Age :</label>
             <input
               type="number"
               placeholder="age"
-              className="border-[0.2px] border-[#ec008c] ml-2 px-2 py-1 rounded-xl outline-none"
+              className="border-[0.2px] border-[#ec008c] ml-2 px-2 py-1 rounded-xl outline-none w-3/4"
               value={age}
               onChange={(e) => setAge(e.target.value)}
             />
           </div>
-          <div className="flex gap-4 -ml-14">
-            <label htmlFor="gender">Gender :</label>
+          <div className="flex gap-4 w-full">
+            <label htmlFor="gender" className="">Gender :</label>
             <div>
               <input
                 type="radio"
@@ -125,52 +125,52 @@ const BodyFat = () => {
               </label>
             </div>
           </div>
-          <div>
-            <label htmlFor="">Height :</label>
+          <div className="w-full">
+            <label htmlFor="" className="w-1/4">Height :</label>
             <input
               type="number"
               placeholder="height in cm"
-              className="border-[0.2px] border-[#ec008c] ml-2 px-2 py-1 rounded-xl outline-none"
+              className="border-[0.2px] border-[#ec008c] ml-2 px-2 py-1 rounded-xl outline-none w-3/4"
               value={height}
               onChange={(e) => setHeight(e.target.value)}
             />
           </div>
-          <div className="mr-1">
-            <label htmlFor="">Weight :</label>
+          <div className="w-full">
+            <label htmlFor="" className="w-1/4">Weight :</label>
             <input
               type="number"
               placeholder="weight in Kgs"
-              className="border-[0.2px] border-[#ec008c] ml-2 px-2 py-1 rounded-xl outline-none"
+              className="border-[0.2px] border-[#ec008c] ml-2 px-2 py-1 rounded-xl outline-none w-3/4"
               value={weight}
               onChange={(e) => setWeight(e.target.value)}
             />
           </div>
-          <div className="ml-1">
-            <label htmlFor="">Waist :</label>
+          <div className="lg:ml-5 w-full">
+            <label htmlFor="" className="w-1/4">Waist :</label>
             <input
               type="number"
               placeholder="waist in cm"
-              className="border-[0.2px] border-[#ec008c] ml-2 px-2 py-1 rounded-xl outline-none"
+              className="border-[0.2px] border-[#ec008c] ml-2 px-2 py-1 rounded-xl outline-none w-3/4"
               value={waist}
               onChange={(e) => setWaist(e.target.value)}
             />
           </div>
-          <div className="ml-4">
-            <label htmlFor="">Hip :</label>
+          <div className="ml-4 w-full">
+            <label htmlFor="" className="w-1/4">Hip :</label>
             <input
               type="number"
               placeholder="hip in cm"
-              className="border-[0.2px] border-[#ec008c] ml-2 px-2 py-1 rounded-xl outline-none"
+              className="border-[0.2px] border-[#ec008c] ml-2 px-2 py-1 rounded-xl outline-none w-3/4"
               value={hip}
               onChange={(e) => setHip(e.target.value)}
             />
           </div>
-          <div>
-            <label htmlFor="">Neck :</label>
+          <div className="w-full">
+            <label htmlFor="" className="w-1/4">Neck :</label>
             <input
               type="number"
               placeholder="neck in cm"
-              className="border-[0.2px] border-[#ec008c] ml-2 px-2 py-1 rounded-xl outline-none"
+              className="border-[0.2px] border-[#ec008c] ml-2 px-2 py-1 rounded-xl outline-none w-3/4"
               value={neck}
               onChange={(e) => setNeck(e.target.value)}
             />
@@ -184,7 +184,7 @@ const BodyFat = () => {
             </button>
           </div>
         </div>
-        <div className="border-[0.1px] p-8 rounded-lg shadow-lg shadow-slate-300 mt-6 lg:w-1/2 lg:h-full h-[550px]">
+        <div className="border-[0.1px] p-8 rounded-lg shadow-lg shadow-slate-300 mt-6 lg:w-1/2">
           <div className="mt-6">
             <div className="lg:block flex justify-center">
               <img
@@ -234,7 +234,7 @@ const BodyFat = () => {
           </div>
         </div>
       </div>
-      <p className="mt-10 text-lg">
+      <p className="mt-10 md:text-xl lg:text-left text-justify">
         Body fat percentage represents the proportion of fat mass to total body
         weight. While some body fat is essential for insulation, hormone
         production, and organ protection, excess body fat can have detrimental
@@ -245,7 +245,7 @@ const BodyFat = () => {
         nutrition strategies to achieve a healthy balance and optimize your
         overall well-being.
       </p>
-      <p className="mt-2 text-lg">
+      <p className="lg:mt-2 mt-4 md:text-xl lg:text-left text-justify">
         Women typically have a higher body fat percentage than men due to
         differences in hormonal and physiological factors. Body fat distribution
         can vary between individuals, with some people storing fat predominantly

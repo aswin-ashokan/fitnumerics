@@ -57,13 +57,13 @@ const Bmi = () => {
         className="md:float-right"
       />
       </div>
-      <p className="text-lg">
+      <p className="md:text-xl lg:text-left text-justify">
         Body Mass Index (BMI) is a widely-used measurement tool that provides an
         indication of a person&apos;s body fatness based on their height and
         weight. Understanding your BMI can offer valuable insights into your
         overall health and help guide lifestyle choices to promote well-being.
       </p>
-      <p className="text-lg">
+      <p className="lg:mt-2 mt-4 md:text-xl lg:text-left text-justify">
         BMI is calculated by dividing a person&apos;s weight in kilograms by the
         square of their height in meters. The resulting number falls into one of
         several categories, including underweight, normal weight, overweight, or
@@ -170,9 +170,9 @@ const Bmi = () => {
       </div>
       <div className="lg:flex gap-8 mt-10">
         <div className="lg:w-2/4">
-          <ul className=" text-lg mt-4">
+          <ul className=" text-lg mt-4 lg:text-left text-center">
             <li>
-              <p className="text-xl mb-1 lg:mt-0 mt-6 text-slate-400">
+              <p className="mb-1 lg:mt-0 mt-6 text-slate-400">
                 Recommended BMI Ranges
               </p>
             </li>
@@ -189,8 +189,8 @@ const Bmi = () => {
               <span className="font-medium">Obese:</span> BMI 30 or higher
             </li>
           </ul>
-          <p className="text-lg mt-4">
-            <span className="text-xl">Why BMI Matters:</span> Maintaining a
+          <p className="mt-4 md:text-xl lg:text-left text-justify">
+            <span className="text-lg">Why BMI Matters:</span> Maintaining a
             healthy BMI is associated with a reduced risk of various health
             conditions, including heart disease, type 2 diabetes, and certain
             cancers. However, it&apos;s essential to recognize that BMI is just

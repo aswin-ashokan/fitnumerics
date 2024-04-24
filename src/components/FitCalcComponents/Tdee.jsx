@@ -72,7 +72,7 @@ const Tdee = () => {
           className="md:float-right ml-4 rounded-lg"
         />
       </div>
-      <p className="text-lg lg:mt-0 mt-4">
+      <p className="lg:mt-0 mt-4 md:text-xl lg:text-left text-justify">
         Welcome to our Total Daily Energy Expenditure (TDEE) Calculator, your
         ultimate tool for understanding the total number of calories your body
         burns in a day encompassing your Basal Metabolic Rate (BMR) and
@@ -80,7 +80,7 @@ const Tdee = () => {
         Measuring TDEE goes beyond calorie counting, providing valuable insights
         into your energy needs, metabolism, and overall health.
       </p>
-      <p className="text-lg mt-2">
+      <p className="lg:mt-2 mt-4 md:text-xl lg:text-left text-justify">
         Measuring Total Daily Energy Expenditure is essential for achieving
         balanced nutrition and supporting your fitness goals. TDEE represents
         the sum of calories your body burns throughout the day, encompassing
@@ -97,17 +97,17 @@ const Tdee = () => {
       </p>
       <div className="lg:flex gap-10 w-full mt-10">
         <div className=" flex flex-col rounded-lg justify-center items-center gap-6 lg:w-1/2 w-full border-[0.1px] p-8 shadow-lg shadow-slate-300">
-          <div className="ml-5">
-            <label htmlFor="age">Age :</label>
+          <div className="ml-5 w-full">
+            <label htmlFor="age" className="w-1/4">Age :</label>
             <input
               type="number"
               placeholder="age"
-              className="border-[0.2px] border-[#ec008c] ml-2 px-2 py-1 rounded-xl outline-none"
+              className="border-[0.2px] border-[#ec008c] ml-2 px-2 py-1 rounded-xl outline-none w-3/4"
               value={age}
               onChange={(e) => setAge(e.target.value)}
             />
           </div>
-          <div className="flex gap-4 mr-14">
+          <div className="flex gap-4 w-full">
             <label htmlFor="gender">Gender :</label>
             <div>
               <input
@@ -138,32 +138,32 @@ const Tdee = () => {
               </label>
             </div>
           </div>
-          <div>
-            <label htmlFor="">Height :</label>
+          <div className="w-full">
+            <label htmlFor="" className="w-1/4">Height :</label>
             <input
               type="number"
               placeholder="Height in cm"
-              className="border-[0.2px] border-[#ec008c] ml-2 px-2 py-1 rounded-xl outline-none"
+              className="border-[0.2px] border-[#ec008c] ml-2 px-2 py-1 rounded-xl outline-none w-3/4"
               value={height}
               onChange={(e) => setHeight(e.target.value)}
             />
           </div>
-          <div>
-            <label htmlFor="">Weight :</label>
+          <div className="w-full">
+            <label htmlFor="" className="w-1/4">Weight :</label>
             <input
               type="number"
               placeholder="Weight in Kgs"
-              className="border-[0.2px] border-[#ec008c] ml-2 px-2 py-1 rounded-xl outline-none"
+              className="border-[0.2px] border-[#ec008c] ml-2 px-2 py-1 rounded-xl outline-none w-3/4"
               value={weight}
               onChange={(e) => setWeight(e.target.value)}
             />
           </div>
-          <div className="mr-[40px]">
-            <label htmlFor="activityLevel">Activity Level : </label>
+          <div className="w-full">
+            <label htmlFor="activityLevel" className="w-1/4">Activity : </label>
             <select
               name=""
               id="activityLevel"
-              className="border-[0.2px] border-[#ec008c] ml-2 px-2 py-1 rounded-xl outline-none w-[200px]"
+              className="border-[0.2px] border-[#ec008c] ml-2 px-2 py-1 rounded-xl outline-none w-3/4"
               value={activityLevel}
               onChange={(e) => setActivityLevel(e.target.value)}
             >
@@ -278,7 +278,7 @@ const Tdee = () => {
           </div>
         </div>
       </div>
-      <p className="mt-10 text-lg">
+      <p className="mt-10 md:text-xl lg:text-left text-justify">
         Our TDEE Calculator estimates your Total Daily Energy Expenditure based
         on various factors such as age, gender, weight, height, activity level,
         and fitness goals. By inputting this information, you can obtain
