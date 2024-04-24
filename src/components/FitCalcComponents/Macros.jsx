@@ -88,7 +88,7 @@ const Macros = () => {
         it&apos;s weight loss, muscle gain, or overall well-being.
       </p>
       <div className="lg:flex gap-10 w-full items-center">
-        <div className="mt-10 flex flex-col gap-4 rounded-lg lg:w-1/2 w-full border-[0.1px] p-8 shadow-lg shadow-slate-300">
+        <div className="mt-10 flex flex-col gap-4 rounded-lg items-center lg:w-1/2 w-full border-[0.1px] p-8 shadow-lg shadow-slate-300">
           <div className="w-full">
             <label htmlFor="age" className="w-1/4">Age :</label>
             <input
@@ -151,11 +151,11 @@ const Macros = () => {
             />
           </div>
           <div className="w-full">
-            <label htmlFor="activityLevel" className="w-1/4">Activity : </label>
+            <label htmlFor="activityLevel" className="w-1/4">Activity :</label>
             <select
               name=""
               id="activityLevel"
-              className="border-[0.2px] border-[#ec008c] ml-2 px-2 py-1 rounded-xl outline-none w-3/4"
+              className="border-[0.2px] border-[#ec008c] ml-2 px-2 py-1 rounded-xl outline-none w-3/4 overflow-hidden"
               value={activityLevel}
               onChange={(e) => setActivityLevel(e.target.value)}
             >
@@ -171,11 +171,11 @@ const Macros = () => {
               </option>
             </select>
           </div>
-          <div className="ml-4 w-full">
-            <label htmlFor="activityLevel" className="w-1/4">Goal : </label>
+          <div className="w-full">
+            <label htmlFor="goal" className="w-1/4">Goal :</label>
             <select
               name=""
-              id="activityLevel"
+              id="goal"
               className="border-[0.2px] border-[#ec008c] ml-2 px-2 py-1 rounded-xl outline-none w-3/4"
               value={goal}
               onChange={(e) => setGoal(e.target.value)}
@@ -190,7 +190,7 @@ const Macros = () => {
           </div>
           <div className="">
             <button
-              className="bg-gradient-to-r from-[#DA4453] to-[#89216B] text-[#fff] px-4 py-2 rounded-2xl hover:bg-gradient-to-r hover:from-[#ec008c] hover:to-[#fc6767] transition duration-500 ease-in-out shadow-lg shadow-slate-500 ml-[70px]"
+              className="bg-gradient-to-r from-[#DA4453] to-[#89216B] text-[#fff] px-4 py-2 rounded-2xl hover:bg-gradient-to-r hover:from-[#ec008c] hover:to-[#fc6767] transition duration-500 ease-in-out shadow-lg shadow-slate-500"
               onClick={handlebmiCalc}
             >
               Calculate
@@ -200,12 +200,12 @@ const Macros = () => {
         <div className="border-[0.1px] p-8 rounded-lg shadow-lg shadow-slate-300 mt-10 lg:w-3/4">
           <div className="mt-2">
             <h4 className="text-2xl mb-2 text-center">Result</h4>
-            <p className="mt-4 text-center text-lg">
+            <p className="mt-4 text-center lg:text-lg">
               Maintainance Calorie :{" "}
-              <span className="text-3xl font-medium">
+              <span className="lg:text-3xl text-2xl font-medium">
                 {" "}
                 {macros ? Math.round(macros.calorie) : 0}
-                <span className="text-sm"> Calories/day</span>
+                <span className="text-sm font-normal"> Calories/day</span>
               </span>
             </p>
             <div className="flex 2xl:flex-nowrap flex-wrap mt-4 2xl:gap-2 gap-4 justify-center">

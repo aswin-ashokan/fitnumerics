@@ -195,35 +195,35 @@ const BodyFat = () => {
             </div>
             <h4 className="text-2xl mb-2 text-center">Result</h4>
             <div className="mt-6 lg:text-left text-center">
-              <p className="text-lg mb-2">
+              <p className="lg:text-lg text-md mb-2">
                 Your Body Fat <span className="text-sm">(BMI method)</span> :
                 <span className="text-xl font-medium">
                   {" "}
                   {bodyFatReadings[bfkey[4]]} %
                 </span>
               </p>
-              <p className="text-lg mb-2">
+              <p className="lg:text-lg text-md mb-2">
                 Your Body Fat <span className="text-sm">(U.S Navy method)</span>{" "}
                 :{""}{" "}
                 <span className="text-xl font-medium">
                   {bodyFatReadings[bfkey[0]]} %
                 </span>
               </p>
-              <p className="text-lg mb-2">
+              <p className="lg:text-lg text-md mb-2">
                 Your Body Fat Category :
                 <span className="text-xl font-medium">
                   {" "}
                   {bodyFatReadings[bfkey[1]]}
                 </span>
               </p>
-              <p className="text-lg mb-2">
+              <p className="lg:text-lg text-md mb-2">
                 Your Body Fat Mass :
                 <span className="text-xl font-medium">
                   {" "}
                   {bodyFatReadings[bfkey[2]]} %
                 </span>
               </p>
-              <p className="text-lg lg:ml-[148px]">
+              <p className="lg:text-lg text-md lg:ml-[148px]">
                 Your Lean Body Mass :
                 <span className="text-xl font-medium">
                   {" "}

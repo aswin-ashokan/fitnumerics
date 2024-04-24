@@ -155,15 +155,15 @@ const Bmi = () => {
             <h4 className="text-center text-2xl">Result</h4>
             <p className="mt-4 text-center">
               Your BMI :{" "}
-              <span className="text-3xl">
+              <span className="lg:text-3xl text-xl font-medium">
                 {" "}
                 {bmi}
-                <span className="text-sm"> kg/m2</span>
+                <span className="text-sm font-normal"> kg/m2</span>
               </span>
             </p>
-            <p className="mt-4 text-center ">
+            <p className="mt-4 text-center">
               Your BMI Category :
-              <span className="text-xl font-medium"> {bmiCat}</span>
+              <span className="lg:text-xl text-lg font-medium"> {bmiCat}</span>
             </p>
           </div>
         </div>

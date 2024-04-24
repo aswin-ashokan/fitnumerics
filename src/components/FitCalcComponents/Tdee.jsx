@@ -159,7 +159,7 @@ const Tdee = () => {
             />
           </div>
           <div className="w-full">
-            <label htmlFor="activityLevel" className="w-1/4">Activity : </label>
+            <label htmlFor="activityLevel" className="w-1/4">Activity :</label>
             <select
               name=""
               id="activityLevel"
@@ -185,9 +185,9 @@ const Tdee = () => {
         <div className="border-[0.1px] p-8 rounded-lg shadow-lg shadow-slate-300 lg:w-1/2 lg:mt-0 mt-10">
           <div className="mt-6">
             <h4 className="text-2xl text-center">Result</h4>
-            <p className="text-center text-lg">
+            <p className="mt-4 text-center lg:text-lg">
               Your Maintainance Calories:
-              <span className="text-2xl font-medium">
+              <span className="lg:text-2xl text-xl font-medium">
                 {" "}
                 {tdee}{" "}
                 <span className="text-sm font-normal"> Calories/day</span>
@@ -201,34 +201,31 @@ const Tdee = () => {
                       Energy intake to lose weight
                     </p>
                   </li>
-                  <li className="mb-1">
-                    <span className="text-lg font-medium">
+                  <li className="mb-1 mt-1">
+                    <span className="lg:text-lg font-medium">
                       Mild weight loss
-                    </span>{" "}
-                    (0.25 kg/week) :
-                    <span className="text-xl font-medium">
-                      {" "}
-                      {mildWeightLoss}{" "}
+                    </span>
+                     (0.25 kg/week) : 
+                    <span className="ml-1 lg:text-xl text-lg font-medium">
+                      {mildWeightLoss}
                       <span className="text-sm font-normal"> Calories/day</span>
                     </span>
                   </li>
                   <li>
-                    <span className="text-lg font-medium">weight loss</span>{" "}
+                    <span className="lg:text-lg font-medium">weight loss</span>
                     (0.5 kg/week) :
-                    <span className="text-xl font-medium">
-                      {" "}
-                      {WeightLoss}{" "}
+                    <span className="ml-1 lg:text-xl text-lg font-medium">
+                      {WeightLoss}
                       <span className="text-sm font-normal"> Calories/day</span>
                     </span>
                   </li>
                   <li className="mt-1">
-                    <span className="text-lg font-medium">
+                    <span className="lg:text-lg font-medium">
                       Extreme weight loss
-                    </span>{" "}
+                    </span>
                     (1 kg/week) :
-                    <span className="text-xl font-medium">
-                      {" "}
-                      {extremeWeightLoss}{" "}
+                    <span className="ml-1 lg:text-xl text-lg font-medium">
+                      {extremeWeightLoss}
                       <span className="text-sm font-normal"> Calories/day</span>
                     </span>
                   </li>
@@ -242,33 +239,30 @@ const Tdee = () => {
                     </p>
                   </li>
                   <li className="mb-1">
-                    <span className="text-lg font-medium">
+                    <span className="lg:text-lg font-medium">
                       Mild weight gain
-                    </span>{" "}
+                    </span>
                     (0.25 kg/week) :
-                    <span className="font-medium text-xl">
-                      {" "}
-                      {mildWeightGain}{" "}
+                    <span className="ml-1 font-medium lg:text-xl text-lg">
+                      {mildWeightGain}
                       <span className="text-sm font-normal"> Calories/day</span>
                     </span>
                   </li>
                   <li>
-                    <span className="text-lg font-medium">weight gain</span>{" "}
+                    <span className="lg:text-lg font-medium">weight gain</span>
                     (0.5 kg/week) :
-                    <span className="font-medium text-xl">
-                      {" "}
-                      {WeightGain}{" "}
+                    <span className="font-medium lg:text-xl text-lg ml-1">
+                      {WeightGain}
                       <span className="text-sm font-normal"> Calories/day</span>
                     </span>
                   </li>
                   <li className="mt-1">
-                    <span className="text-lg font-medium">
+                    <span className="lg:text-lg font-medium">
                       Extreme weight gain
-                    </span>{" "}
+                    </span>
                     (1 kg/week) :
-                    <span className="font-medium text-xl">
-                      {" "}
-                      {extremeWeightGain}{" "}
+                    <span className="font-medium lg:text-xl text-lg ml-1">
+                      {extremeWeightGain}
                       <span className="text-sm font-normal"> Calories/day</span>
                     </span>
                   </li>
