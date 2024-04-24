@@ -154,9 +154,8 @@ const Bmi = () => {
             />
             <h4 className="text-center text-2xl">Result</h4>
             <p className="mt-4 text-center">
-              Your BMI :{" "}
-              <span className="lg:text-3xl text-xl font-medium">
-                {" "}
+              Your BMI :
+              <span className="ml-1 lg:text-3xl text-xl font-medium">
                 {bmi}
                 <span className="text-sm font-normal"> kg/m2</span>
               </span>

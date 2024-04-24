@@ -201,11 +201,10 @@ const Macros = () => {
           <div className="mt-2">
             <h4 className="text-2xl mb-2 text-center">Result</h4>
             <p className="mt-4 text-center lg:text-lg">
-              Maintainance Calorie :{" "}
-              <span className="lg:text-3xl text-2xl font-medium">
-                {" "}
+              Maintainance Calorie :
+              <span className="ml-1 g:text-3xl text-2xl font-medium">
                 {macros ? Math.round(macros.calorie) : 0}
-                <span className="text-sm font-normal"> Calories/day</span>
+                <span className="text-sm font-normal"> kcal</span>
               </span>
             </p>
             <div className="flex 2xl:flex-nowrap flex-wrap mt-4 2xl:gap-2 gap-4 justify-center">
@@ -213,24 +212,24 @@ const Macros = () => {
                 <p className="text-center mb-2">Balanced Diet</p>
                 <ul>
                   <li className="text-sm">
-                    Protien :{" "}
-                    <span className="text-lg font-medium">
-                      {balancedDiet ? Math.round(balancedDiet.protein) : 0}{" "}
-                      <span className="text-sm font-normal">grams</span>
+                    Protien :
+                    <span className="ml-1 text-lg font-medium">
+                      {balancedDiet ? Math.round(balancedDiet.protein) : 0}
+                      <span className="text-sm font-normal"> grams</span>
                     </span>
                   </li>
                   <li className="text-sm">
-                    Fat :{" "}
-                    <span className="text-lg font-medium">
-                      {balancedDiet ? Math.round(balancedDiet.fat) : 0}{" "}
-                      <span className="text-sm font-normal">grams</span>
+                    Fat :
+                    <span className="ml-1 text-lg font-medium">
+                      {balancedDiet ? Math.round(balancedDiet.fat) : 0}
+                      <span className="text-sm font-normal"> grams</span>
                     </span>
                   </li>
                   <li className="text-sm">
-                    Carbs :{" "}
-                    <span className="text-lg font-medium">
-                      {balancedDiet ? Math.round(balancedDiet.carbs) : 0}{" "}
-                      <span className="text-sm font-normal">grams</span>
+                    Carbs :
+                    <span className="ml-1 text-lg font-medium">
+                      {balancedDiet ? Math.round(balancedDiet.carbs) : 0}
+                      <span className="text-sm font-normal"> grams</span>
                     </span>
                   </li>
                 </ul>
@@ -239,24 +238,24 @@ const Macros = () => {
                 <p className="text-center mb-2 ">High Protein Diet</p>
                 <ul>
                   <li className="text-sm">
-                    Protien :{" "}
-                    <span className="text-lg font-medium">
-                      {proteinDiet ? Math.round(proteinDiet.protein) : 0}{" "}
-                      <span className="text-sm font-normal">grams</span>
+                    Protien :
+                    <span className="ml-1 text-lg font-medium">
+                      {proteinDiet ? Math.round(proteinDiet.protein) : 0}
+                      <span className="text-sm font-normal"> grams</span>
                     </span>
                   </li>
                   <li className="text-sm">
-                    Fat :{" "}
-                    <span className="text-lg font-medium">
-                      {proteinDiet ? Math.round(proteinDiet.fat) : 0}{" "}
-                      <span className="text-sm font-normal">grams</span>
+                    Fat :
+                    <span className="ml-1 text-lg font-medium">
+                      {proteinDiet ? Math.round(proteinDiet.fat) : 0}
+                      <span className="text-sm font-normal"> grams</span>
                     </span>
                   </li>
                   <li className="text-sm">
-                    Carbs :{" "}
-                    <span className="text-lg font-medium">
-                      {proteinDiet ? Math.round(proteinDiet.carbs) : 0}{" "}
-                      <span className="text-sm font-normal">grams</span>
+                    Carbs :
+                    <span className="ml-1 text-lg font-medium">
+                      {proteinDiet ? Math.round(proteinDiet.carbs) : 0}
+                      <span className="text-sm font-normal"> grams</span>
                     </span>
                   </li>
                 </ul>
@@ -265,24 +264,24 @@ const Macros = () => {
                 <p className="text-center mb-2">Low Carbs Diet</p>
                 <ul>
                   <li className="text-sm">
-                    Protien :{" "}
-                    <span className="text-lg font-medium">
-                      {carbsDiet ? Math.round(carbsDiet.protein) : 0}{" "}
-                      <span className="text-sm font-normal">grams</span>
+                    Protien :
+                    <span className="ml-1 text-lg font-medium">
+                      {carbsDiet ? Math.round(carbsDiet.protein) : 0}
+                      <span className="text-sm font-normal"> grams</span>
                     </span>
                   </li>
                   <li className="text-sm">
-                    Fat :{" "}
-                    <span className="text-lg font-medium">
-                      {carbsDiet ? Math.round(carbsDiet.fat) : 0}{" "}
-                      <span className="text-sm font-normal">grams</span>
+                    Fat :
+                    <span className="ml-1 text-lg font-medium">
+                      {carbsDiet ? Math.round(carbsDiet.fat) : 0}
+                      <span className="text-sm font-normal"> grams</span>
                     </span>
                   </li>
                   <li className="text-sm">
-                    Carbs :{" "}
-                    <span className="text-lg font-medium">
-                      {carbsDiet ? Math.round(carbsDiet.carbs) : 0}{" "}
-                      <span className="text-sm font-normal">grams</span>
+                    Carbs :
+                    <span className="ml-1 text-lg font-medium">
+                      {carbsDiet ? Math.round(carbsDiet.carbs) : 0}
+                      <span className="text-sm font-normal"> grams</span>
                     </span>
                   </li>
                 </ul>
@@ -291,24 +290,24 @@ const Macros = () => {
                 <p className="text-center">Low Fat Diet</p>
                 <ul>
                   <li className="text-sm">
-                    Protien :{" "}
-                    <span className="text-lg font-medium">
-                      {fatDiet ? Math.round(fatDiet.protein) : 0}{" "}
-                      <span className="text-sm font-normal">grams</span>
+                    Protien :
+                    <span className="ml-1 text-lg font-medium">
+                      {fatDiet ? Math.round(fatDiet.protein) : 0}
+                      <span className="text-sm font-normal"> grams</span>
                     </span>
                   </li>
                   <li className="text-sm">
-                    Fat :{" "}
-                    <span className="text-lg font-medium">
-                      {fatDiet ? Math.round(fatDiet.fat) : 0}{" "}
-                      <span className="text-sm font-normal">grams</span>
+                    Fat :
+                    <span className="ml-1 text-lg font-medium">
+                      {fatDiet ? Math.round(fatDiet.fat) : 0}
+                      <span className="text-sm font-normal"> grams</span>
                     </span>
                   </li>
                   <li className="text-sm">
-                    Carbs :{" "}
-                    <span className="text-lg font-medium">
-                      {fatDiet ? Math.round(fatDiet.carbs) : 0}{" "}
-                      <span className="text-sm font-normal">grams</span>
+                    Carbs :
+                    <span className="ml-1 text-lg font-medium">
+                      {fatDiet ? Math.round(fatDiet.carbs) : 0}
+                      <span className="text-sm font-normal"> grams</span>
                     </span>
                   </li>
                 </ul>

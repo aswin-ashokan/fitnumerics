@@ -98,7 +98,9 @@ const Tdee = () => {
       <div className="lg:flex gap-10 w-full mt-10">
         <div className=" flex flex-col rounded-lg justify-center items-center gap-6 lg:w-1/2 w-full border-[0.1px] p-8 shadow-lg shadow-slate-300">
           <div className="ml-5 w-full">
-            <label htmlFor="age" className="w-1/4">Age :</label>
+            <label htmlFor="age" className="w-1/4">
+              Age :
+            </label>
             <input
               type="number"
               placeholder="age"
@@ -139,7 +141,9 @@ const Tdee = () => {
             </div>
           </div>
           <div className="w-full">
-            <label htmlFor="" className="w-1/4">Height :</label>
+            <label htmlFor="" className="w-1/4">
+              Height :
+            </label>
             <input
               type="number"
               placeholder="Height in cm"
@@ -149,7 +153,9 @@ const Tdee = () => {
             />
           </div>
           <div className="w-full">
-            <label htmlFor="" className="w-1/4">Weight :</label>
+            <label htmlFor="" className="w-1/4">
+              Weight :
+            </label>
             <input
               type="number"
               placeholder="Weight in Kgs"
@@ -159,7 +165,9 @@ const Tdee = () => {
             />
           </div>
           <div className="w-full">
-            <label htmlFor="activityLevel" className="w-1/4">Activity :</label>
+            <label htmlFor="activityLevel" className="w-1/4">
+              Activity :
+            </label>
             <select
               name=""
               id="activityLevel"
@@ -188,9 +196,8 @@ const Tdee = () => {
             <p className="mt-4 text-center lg:text-lg">
               Your Maintainance Calories:
               <span className="lg:text-2xl text-xl font-medium">
-                {" "}
-                {tdee}{" "}
-                <span className="text-sm font-normal"> Calories/day</span>
+                {tdee}
+                <span className="text-sm font-normal"> kcals</span>
               </span>
             </p>
             <div className="flex flex-col items-center gap-2">
@@ -205,10 +212,10 @@ const Tdee = () => {
                     <span className="lg:text-lg font-medium">
                       Mild weight loss
                     </span>
-                     (0.25 kg/week) : 
+                    (0.25 kg/week) :
                     <span className="ml-1 lg:text-xl text-lg font-medium">
                       {mildWeightLoss}
-                      <span className="text-sm font-normal"> Calories/day</span>
+                      <span className="text-sm font-normal"> kcals</span>
                     </span>
                   </li>
                   <li>
@@ -216,7 +223,7 @@ const Tdee = () => {
                     (0.5 kg/week) :
                     <span className="ml-1 lg:text-xl text-lg font-medium">
                       {WeightLoss}
-                      <span className="text-sm font-normal"> Calories/day</span>
+                      <span className="text-sm font-normal"> kcals</span>
                     </span>
                   </li>
                   <li className="mt-1">
@@ -226,7 +233,7 @@ const Tdee = () => {
                     (1 kg/week) :
                     <span className="ml-1 lg:text-xl text-lg font-medium">
                       {extremeWeightLoss}
-                      <span className="text-sm font-normal"> Calories/day</span>
+                      <span className="text-sm font-normal"> kcals</span>
                     </span>
                   </li>
                 </ul>
@@ -245,7 +252,7 @@ const Tdee = () => {
                     (0.25 kg/week) :
                     <span className="ml-1 font-medium lg:text-xl text-lg">
                       {mildWeightGain}
-                      <span className="text-sm font-normal"> Calories/day</span>
+                      <span className="text-sm font-normal"> kcals</span>
                     </span>
                   </li>
                   <li>
@@ -253,7 +260,7 @@ const Tdee = () => {
                     (0.5 kg/week) :
                     <span className="font-medium lg:text-xl text-lg ml-1">
                       {WeightGain}
-                      <span className="text-sm font-normal"> Calories/day</span>
+                      <span className="text-sm font-normal"> kcals</span>
                     </span>
                   </li>
                   <li className="mt-1">
@@ -263,7 +270,7 @@ const Tdee = () => {
                     (1 kg/week) :
                     <span className="font-medium lg:text-xl text-lg ml-1">
                       {extremeWeightGain}
-                      <span className="text-sm font-normal"> Calories/day</span>
+                      <span className="text-sm font-normal"> kcals</span>
                     </span>
                   </li>
                 </ul>

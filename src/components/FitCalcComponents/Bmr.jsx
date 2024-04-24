@@ -152,9 +152,8 @@ const Bmr = () => {
             />
             <h4 className="text-center text-2xl">Result</h4>
             <p className="mt-4 text-center">
-              Your BMR :{" "}
+              Your BMR :
               <span className="text-3xl lg:mt-0 mt-2">
-                {" "}
                 {bmr}
                 <span className="text-sm"> Calories/day</span>
               </span>
