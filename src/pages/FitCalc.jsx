@@ -21,9 +21,9 @@ const FitCalc = () => {
           to fuel your journey towards optimal health and wellness.
         </p>
         <div className="lg:block flex justify-center items-center">
-        <img src="/images/measure.jpg" alt="" width={400} className="rounded-lg lg:float-left mr-10 mt-6"/>
+        <img src="/images/measure.jpg" alt="" width={400} className="rounded-lg lg:float-left lg:mr-10 mt-6"/>
         </div>
-        <p className="mt-6 text-xl">
+        <p className="mt-6 md:text-xl lg:text-left text-justify">
           In the realm of fitness, knowledge is power, and precision is
           paramount. Fitness calculations play a pivotal role in understanding
           your body&apos;s unique needs, setting realistic goals, and crafting
@@ -35,7 +35,7 @@ const FitCalc = () => {
           direction needed to make informed decisions, optimize your efforts,
           and ultimately unlock your full fitness potential. At FitCalc, we&apos;re dedicated to empowering you with the tools and knowledge necessary to embark on a journey of sustainable health and wellness
         </p>
-        <h3 className="text-2xl mt-16 font-medium text-center text-slate-400">Calculate Your</h3>
+        <h3 className="text-2xl lg:mt-16 mt-8 font-medium text-center text-slate-400">Calculate Your</h3>
         <div className="lg:col-start-2 lg:col-end-12 text-black mt-4 flex lg:gap-10 gap-6 flex-wrap items-center justify-center">
           {calculatorsList.map((calcBtn) => (
             <Link

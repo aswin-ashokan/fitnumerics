@@ -50,7 +50,7 @@ const Bmr = () => {
         className="md:float-right rounded-lg"
       />
       </div>
-      <p className="text-lg lg:mt-0 mt-4">
+      <p className="lg:mt-2 mt-4 md:text-xl lg:text-left text-justify">
         BMR represents the number of calories your body requires to sustain
         vital functions such as breathing, circulation, and cell production
         while at complete rest. Factors influencing BMR include age, gender,
@@ -58,7 +58,7 @@ const Bmr = () => {
         baseline for determining daily caloric needs and designing personalized
         nutrition and fitness plans.
       </p>
-      <p className="text-lg">
+      <p className="lg:mt-2 mt-4 md:text-xl lg:text-left text-justify">
         Understanding your BMR can guide dietary choices and weight management
         strategies. Consuming fewer calories than your BMR may lead to weight
         loss, while exceeding this value can result in weight gain. However,
@@ -69,8 +69,8 @@ const Bmr = () => {
         decline with age, primarily due to decreases in muscle mass and
         metabolic rate.
       </p>
-      <div className="lg:flex gap-10 w-full">
-        <div className="mt-6 flex flex-col justify-center items-center gap-4 lg:w-1/2 w-full border-[0.1px] p-8 shadow-lg shadow-slate-300">
+      <div className="lg:flex items-center gap-10 w-full">
+        <div className="mt-10 flex flex-col justify-center items-center gap-4 lg:w-1/2 w-full border-[0.1px] p-8 shadow-lg shadow-slate-300 rounded-lg">
           <div className="lg:ml-12 w-full">
             <label htmlFor="age" className="w-1/4">Age : </label>
             <input
@@ -143,7 +143,7 @@ const Bmr = () => {
             </button>
           </div>
         </div>
-        <div className="border-[0.1px] p-8 shadow-lg shadow-slate-300 mt-6 lg:w-1/2 lg:h-full h-[250px]">
+        <div className="border-[0.1px] p-8 shadow-lg shadow-slate-300 mt-6 lg:w-1/2 lg:h-full h-[250px] rounded-lg">
           <div className="mt-6">
             <img
               src="/gifs/Girl running on treadmill.gif"
@@ -163,7 +163,7 @@ const Bmr = () => {
         </div>
       </div>
       <div className="mt-10 lg:flex">
-        <div className="lg:w-1/2">
+        <div className="lg:w-1/2 lg:text-left text-center">
           <p className="text-xl font-medium text-slate-400">Daily calorie needs based on activity level</p>
           <ul className="text-lg mt-2">
             <li>Sedentary: little or no exercise - 1,974 kcal</li>
@@ -177,7 +177,7 @@ const Bmr = () => {
           </ul>
         </div>
         <div className="lg:w-3/4">
-          <p className="text-lg mt-2">
+          <p className="mt-2 md:text-xl lg:text-left text-justify">
             It&apos;s important to note that while BMR provides valuable
             insights into baseline calorie needs, it&apos;s just one piece of
             the puzzle. Considering your activity level is crucial, as physical
