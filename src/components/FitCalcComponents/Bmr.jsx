@@ -143,12 +143,12 @@ const Bmr = () => {
             </button>
           </div>
         </div>
-        <div className="border-[0.1px] p-8 shadow-lg shadow-slate-300 mt-10 lg:w-1/2 lg:h-full h-[280px] rounded-lg">
+        <div className="border-[0.1px] p-8 shadow-lg shadow-slate-300 mt-10 lg:w-1/2 lg:h-full rounded-lg">
           <div className="mt-6">
             <img
               src="/gifs/Girl running on treadmill.gif"
               alt=""
-              className="float-left"
+              className="float-left lg:block hidden"
               width={200}
             />
             <h4 className="text-center text-2xl">Result</h4>

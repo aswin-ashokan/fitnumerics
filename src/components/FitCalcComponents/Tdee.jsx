@@ -195,7 +195,7 @@ const Tdee = () => {
             <h4 className="text-2xl text-center">Result</h4>
             <p className="mt-4 text-center lg:text-lg">
               Your Maintainance Calories :
-              <span className="ml-1 lg:text-2xl text-xl font-medium">
+              <span className="ml-1 lg:text-2xl text-xl font-medium block">
                 {tdee}
                 <span className="text-sm font-normal"> kcals</span>
               </span>

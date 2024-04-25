@@ -186,7 +186,7 @@ const BodyFat = () => {
         </div>
         <div className="border-[0.1px] p-8 rounded-lg shadow-lg shadow-slate-300 mt-6 lg:w-1/2">
           <div className="mt-6">
-            <div className="lg:block flex justify-center">
+            <div className="lg:block hidden">
               <img
                 src="/gifs/Man lifting barbell.gif"
                 alt=""

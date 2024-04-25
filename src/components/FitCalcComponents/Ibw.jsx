@@ -94,13 +94,13 @@ const Ibw = () => {
           </button>
         </div>
       </div>
-      <div className="border-[0.1px] rounded-xl p-6 shadow-lg shadow-slate-300 mt-6 lg:w-1/2 lg:h-full h-[250px]">
+      <div className="border-[0.1px] rounded-xl p-6 shadow-lg shadow-slate-300 mt-6 lg:w-1/2 lg:h-full">
         <div className="">
         <img
               src="/images/weighing-scale.png"
               alt=""
               width={200}
-              className="float-left drop-shadow-2xl"
+              className="float-left drop-shadow-2xl lg:block hidden"
             />
           <h4 className="py-6 text-center text-2xl">Result</h4>
           <p className="text-center">Your IBW : <span className="text-4xl"> {ibw}<span className="text-sm"> Kg</span></span></p>
