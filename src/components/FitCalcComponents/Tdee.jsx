@@ -60,7 +60,7 @@ const Tdee = () => {
   var extremeWeightGain = Math.round(tdee + tdeeSplitRes[5]);
 
   return (
-    <main className="mb-36">
+    <main className="mb-10">
       <h1 className="text-center text-2xl mb-4">
         TDEE : Total Daily Energy Expenditure
       </h1>

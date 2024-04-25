@@ -3,7 +3,7 @@ import { Suspense, lazy, useEffect, useState } from "react";
 import Layout from "./Layout";
 import Preloader from "./components/FallBackComponents/Preloader";
 import SimpleLoader from "./components/FallBackComponents/SimpleLoader";
-const Home = lazy(() => import("./pages/Home"));
+import Home from "./pages/Home";
 const FitCalc = lazy(() => import("./pages/FitCalc"));
 const FitDrill = lazy(() => import("./pages/FitDrill"));
 const FitInfos = lazy(() => import("./pages/FitInfos"));

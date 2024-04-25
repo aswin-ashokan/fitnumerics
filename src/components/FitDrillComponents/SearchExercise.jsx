@@ -108,7 +108,7 @@ const SearchExercise = () => {
           </div>
         </div>
         {/* ---Exercise cards-- */}
-        <div className="flex lg:flex-wrap lg:flex-row flex-col 2xl:gap-12 gap-10 mt-14 justify-center mb-32">
+        <div className="flex lg:flex-wrap lg:flex-row flex-col 2xl:gap-12 gap-10 mt-14 justify-center mb-16">
           {
             exeData && 
             exeData.map((exe) => (

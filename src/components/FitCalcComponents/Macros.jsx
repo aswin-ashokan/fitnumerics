@@ -57,7 +57,7 @@ const Macros = () => {
     }
   };
   return (
-    <main className="mb-36">
+    <main className="mb-10">
       <h1 className="text-center text-2xl mb-4">Macro Nutrients Amount</h1>
       <div className="lg:block flex justify-center">
       <img
